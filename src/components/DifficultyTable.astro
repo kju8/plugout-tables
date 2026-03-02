@@ -1,0 +1,212 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+  multimode: boolean;
+  list: CollectionEntry<"charts">[];
+}
+const { multimode = false, list } = Astro.props;
+
+const bmTotal = (notes: number) => (Math.floor(14933 / notes) * notes) / 55;
+const iidxTotal = (notes: number) => (7.605 * notes) / (0.01 * notes + 6.5);
+---
+
+<div id="chart_table" class={multimode ? "multimode" : ""}>
+  <div></div>
+  <div>IR</div>
+  <div>SCORE</div>
+  <div></div>
+  <div>LEVEL</div>
+  <div>GENRE</div>
+  <div>TITLE</div>
+  <div>ARTIST</div>
+  <div>JUDGE</div>
+  <div>BPM</div>
+  <div>LENGTH</div>
+  <div>NOTES</div>
+  <div>
+    譜面密度<br /><small>(NOTES/SEC.)</small>
+  </div>
+  <div>TOTAL</div>
+  <div>
+    回復量<br /><small>(T/N)</small>
+  </div>
+  {
+    list.map((v) => (
+      <>
+        <div>
+          {v.data.package.series}
+          {(v.data.package.series === "plugout4" ||
+            v.data.package.series === "plugout5") && (
+            <>
+              <br />
+              <small>{v.data.package.phase}</small>
+            </>
+          )}
+        </div>
+        <div>
+          <a
+            href={`http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=${v.data.md5}`}
+          >
+            <img src="/LR2.png" class="inline size-[1lh]" />
+          </a>
+          <a
+            href={`https://mocha-repository.info/song.php?sha256=${v.data.sha256}`}
+          >
+            ☕
+          </a>
+          <a
+            href={`https://www.gaftalk.com/minir/#/viewer/song/${v.data.sha256}/0`}
+          >
+            <img src="/MinIR.png" class="inline size-[1lh]" />
+          </a>
+        </div>
+        <div>
+          <a
+            href={`https://bms-score-viewer.pages.dev/view?md5=${v.data.md5}`}
+            target="_blank"
+          >
+            📈
+          </a>
+        </div>
+        <div>{v.data.player === "single" ? "SP" : "DP"}</div>
+        <div data-level={v.data.level}>☆{v.data.level}</div>
+        <div>{v.data.genre}</div>
+        <div>{v.data.title}</div>
+        <div>{v.data.artist}</div>
+        <div data-judge={v.data.judge}>
+          {v.data.judge?.toUpperCase() ?? "―――"}
+        </div>
+        <div>
+          {Array.isArray(v.data.bpm)
+            ? `${v.data.bpm[0]}～${v.data.bpm[1]}`
+            : v.data.bpm}
+        </div>
+        <div>{v.data.length.toFixed(2)} s</div>
+        <div>{v.data.notes}</div>
+        <div>{(v.data.notes / v.data.length).toFixed(3)}</div>
+        <div>
+          {v.data.total !== undefined ? (
+            <>
+              {v.data.total.toFixed(2)}
+              <small class="tooltip">{`(FINAL比: ${((v.data.total * 100) / bmTotal(v.data.notes)).toFixed(2)}%, IIDX比: ${((v.data.total * 100) / iidxTotal(v.data.notes)).toFixed(2)}%)`}</small>
+            </>
+          ) : (
+            "―――"
+          )}
+        </div>
+        <div>
+          {v.data.total !== undefined
+            ? (v.data.total / v.data.notes).toFixed(3)
+            : "―――"}
+        </div>
+      </>
+    ))
+  }
+</div>
+
+<style>
+  #chart_table {
+    border-top: 1px solid #333;
+    border-left: 1px solid #333;
+
+    width: 100%;
+    display: grid;
+    font-size: 0.8rem;
+
+    grid-template-columns:
+      min-content max-content min-content min-content min-content
+      minmax(max-content, 0.8fr)
+      minmax(max-content, 2fr)
+      minmax(max-content, 1.2fr)
+      min-content max-content min-content min-content min-content min-content min-content;
+  }
+
+  #chart_table:not(.multimode) {
+    grid-template-columns:
+      max-content min-content min-content min-content
+      minmax(max-content, 0.8fr)
+      minmax(max-content, 2fr)
+      minmax(max-content, 1.2fr)
+      min-content max-content min-content min-content min-content min-content min-content;
+  }
+
+  #chart_table > div {
+    position: relative;
+    border-bottom: 1px solid #333;
+    border-right: 1px solid #333;
+    padding: 0.2rem 0.5rem;
+    text-align: center;
+  }
+
+  #chart_table > div[data-level] {
+    --level: attr(data-level type(<number>));
+    --level-filter: min(max(calc(var(--level) - 9), 0), 1);
+
+    --diffcolor: color-mix(
+      in hsl,
+      color-mix(in lch, green, red calc(12.5% * calc(var(--level) - 1))),
+      color-mix(in lch, red, purple calc(25% * calc(var(--level) - 9)))
+        calc(100% * var(--level-filter))
+    );
+
+    background-color: color-mix(in srgb, var(--diffcolor), transparent 60%);
+  }
+
+  #chart_table > div[data-judge="easy"] {
+    background-color: color-mix(in srgb, green, transparent 80%);
+  }
+
+  #chart_table > div[data-judge="normal"] {
+    background-color: color-mix(in srgb, yellow, transparent 80%);
+  }
+
+  #chart_table > div[data-judge="hard"] {
+    background-color: color-mix(in srgb, red, transparent 80%);
+  }
+
+  #chart_table > div[data-judge="veryhard"] {
+    background-color: color-mix(in srgb, purple, transparent 80%);
+  }
+
+  #chart_table > div:nth-child(-n + 15) {
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 0.2rem 0.3rem;
+  }
+
+  #chart_table > div:nth-child(15n + 1) {
+    font-size: smaller;
+    font-weight: bold;
+  }
+
+  #chart_table > div:nth-child(15n + 21),
+  #chart_table > div:nth-child(15n + 22),
+  #chart_table > div:nth-child(15n + 23) {
+    font-family: "M PLUS 1p", sans-serif;
+  }
+
+  #chart_table > div:nth-child(15n + 7) {
+    font-weight: bold;
+  }
+
+  #chart_table:not(.multimode) > div:nth-child(15n + 1) {
+    display: none;
+  }
+
+  #chart_table > div > .tooltip {
+    display: none;
+    position: absolute;
+    width: max-content;
+    bottom: 0px;
+    right: 0px;
+    margin-right: -6em;
+    padding: 0.1rem;
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 2;
+  }
+
+  #chart_table > div:hover > .tooltip {
+    display: block;
+  }
+</style>

@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:COMPLETE" },
+
+  "songId": "09-nearko",
+  "player": "double",
+  "level": 9,
+  "genre": "ELECTRONIC",
+  "title": "Nearko",
+  "artist": "Basso",
+
+  "md5": "3fbe3bb5e527a7bb3c9321a28b543280",
+  "sha256": "5aec314128173ecbba8c6e07d616e648f3aaa3fc3f644d1b0c4ca771de13b6bb",
+
+  "bpm": 145,
+  "notes": 608,
+  "total": 360,
+  "length": 108.39,
+  "judge": "hard"
+}

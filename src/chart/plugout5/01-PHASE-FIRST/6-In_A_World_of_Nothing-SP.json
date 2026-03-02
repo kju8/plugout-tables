@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:FIRST" },
+
+  "songId": "06-in_a_world_of_nothing",
+  "player": "single",
+  "level": 6,
+  "genre": "ALTERNATIVE HOUSE",
+  "title": "In A World of Nothing",
+  "artist": "Astral Sphere II - ARMYTOM",
+
+  "md5": "eafbae658d7b259452a67bf19f35b2d4",
+  "sha256": "e33d0092b43ddf89a0b4417e3d3481b1d7c961d8ff91d68e9a70fc33b5e9dab7",
+
+  "bpm": 124,
+  "notes": 629,
+  "total": 288,
+  "length": 160.65,
+  "judge": "normal"
+}

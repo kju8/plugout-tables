@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:FIRST" },
+
+  "songId": "05-frozen_verse",
+  "player": "double",
+  "level": 5,
+  "genre": "FOGHORN MIX",
+  "title": "Frozen Verse",
+  "artist": "13",
+
+  "md5": "290e32260ac17d978a6e35955a15b1b9",
+  "sha256": "d50a686dee1eabc1170a169e96f468ee8d739fadd3e653f90d6b53196024c42b",
+
+  "bpm": 174,
+  "notes": 870,
+  "total": 256,
+  "length": 158.62,
+  "judge": "easy"
+}

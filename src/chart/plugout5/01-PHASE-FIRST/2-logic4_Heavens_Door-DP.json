@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:FIRST" },
+
+  "songId": "02-logic4_heavens_door",
+  "player": "double",
+  "level": 2,
+  "genre": "TRAP",
+  "title": "LOGIC4 Heven's Door",
+  "artist": "A.T.M.",
+
+  "md5": "a3b97c613bd512f52695d1d23ba560c2",
+  "sha256": "3817f81be905b3c98246a909faeece20c763603742c8cba832ce60f29a610197",
+
+  "bpm": 75,
+  "notes": 268,
+  "total": 168,
+  "length": 158.2,
+  "judge": "normal"
+}

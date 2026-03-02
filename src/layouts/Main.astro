@@ -1,0 +1,24 @@
+---
+import "../styles/global.css";
+const { title } = Astro.props;
+---
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <div id="container">
+      <slot />
+    </div>
+  </body>
+
+  <style>
+    #container {
+      width: max-content;
+      margin: 0 auto;
+    }
+  </style>
+</html>

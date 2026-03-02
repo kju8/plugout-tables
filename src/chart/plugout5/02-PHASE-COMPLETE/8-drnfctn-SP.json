@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:COMPLETE" },
+
+  "songId": "08-drnfctn",
+  "player": "single",
+  "level": 8,
+  "genre": "INDUSTRIAL TECHNO",
+  "title": "drnfctn",
+  "artist": "Frums",
+
+  "md5": "2ba40c9359581a3f6bd6a30ad1b37021",
+  "sha256": "bb0119afe53357ab135153da915c4201d2e814d766d448f9353aec94aef48e4c",
+
+  "bpm": 132,
+  "notes": 855,
+  "total": 424,
+  "length": 119.09,
+  "judge": "hard"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:SEVENTH" },
+
+  "songId": "07-giotto",
+  "player": "double",
+  "level": 7,
+  "genre": "ALTERNATIVE ROCK",
+  "title": "ジオット",
+  "artist": "カナイリョウタ",
+
+  "md5": "df5717d209e5b74f4864dcf68b4d9d61",
+  "sha256": "a5c0f36f12b48aa7ca3ef175990867947cf000ff51f5de276def13f8fbd619c7",
+
+  "bpm": [152, 176],
+  "notes": 1365,
+  "total": 388,
+  "length": 177.27,
+  "judge": "easy"
+}

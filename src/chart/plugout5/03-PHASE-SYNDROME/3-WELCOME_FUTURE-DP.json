@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:SYNDROME" },
+
+  "songId": "03-welcome_future",
+  "player": "double",
+  "level": 3,
+  "genre": "CUT UP",
+  "title": "WELCOME, FUTURE",
+  "artist": "SANY-ON",
+
+  "md5": "1592c9d13a7618cf413719beb66b5c90",
+  "sha256": "d286e69bbac0bc34d91faa5b38da6effa30e4b6360aa3528bcd4b69bc3943a20",
+
+  "bpm": 111,
+  "notes": 239,
+  "total": 347,
+  "length": 105.34,
+  "judge": "easy"
+}

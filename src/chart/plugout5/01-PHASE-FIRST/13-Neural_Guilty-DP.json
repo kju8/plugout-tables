@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:FIRST" },
+
+  "songId": "13-neural_guilty",
+  "player": "double",
+  "level": 13,
+  "genre": "GLITCH CORE",
+  "title": "Neural Guilty",
+  "artist": "Atomic Sphere",
+
+  "md5": "13b36b64b7ae98a4f849204a8f4b222a",
+  "sha256": "74ddd15afe703f3a90d1c4b762f65c266a380bad57a5b8c1d8f16e588991e035",
+
+  "bpm": [87, 348],
+  "notes": 1343,
+  "total": 666,
+  "length": 143.45,
+  "judge": "normal"
+}

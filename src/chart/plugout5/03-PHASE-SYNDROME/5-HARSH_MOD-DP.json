@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:SYNDROME" },
+
+  "songId": "05-harsh_mod",
+  "player": "double",
+  "level": 6,
+  "genre": "GABBAH HOP",
+  "title": "HARSH MOD",
+  "artist": "nebulaimako",
+
+  "md5": "f475d181e1dfcb3e550331581f9866ed",
+  "sha256": "dcac599e8035fe4c31f96469f983fe7087169475f40a02b6c89671bb8ffb5673",
+
+  "bpm": 131,
+  "notes": 457,
+  "total": 280,
+  "length": 107.63,
+  "judge": "normal"
+}

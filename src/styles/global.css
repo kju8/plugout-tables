@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&family=Zen+Old+Mincho:wght@400;700&display=swap");
+
+* {
+  font-family: "Zen Old Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}

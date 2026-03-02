@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:SYNDROME" },
+
+  "songId": "06-lite_fond",
+  "player": "single",
+  "level": 6,
+  "genre": "LO-FI HIP HOP",
+  "title": "lite-fond",
+  "artist": "0310",
+
+  "md5": "5d56cfbc46f8e04f879af6c2c8846c78",
+  "sha256": "c7747bcd6a01c9df93afe52dd61bb25fd46cfd85bd55b3eaa5c6c2cd97adeddb",
+
+  "bpm": 84,
+  "notes": 371,
+  "total": 270,
+  "length": 120.71,
+  "judge": "hard"
+}

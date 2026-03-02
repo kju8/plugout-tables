@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:FIRST" },
+
+  "songId": "01-not_enough",
+  "player": "double",
+  "level": 1,
+  "genre": "AMAPIANO",
+  "title": "Not Enough",
+  "artist": "Ansie Anterope",
+
+  "md5": "48b83d5ebc217ab72aedbe1d6a1984d4",
+  "sha256": "d257c1f21123b18cace4b40c20a630bf9255adf77dacb1b4ed3f379ee9e53341",
+
+  "bpm": 113,
+  "notes": 151,
+  "total": 111,
+  "length": 146.55,
+  "judge": "easy"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:SYNDROME" },
+
+  "songId": "07-mycophobia",
+  "player": "single",
+  "level": 7,
+  "genre": "ACID TRANCE",
+  "title": "mycophobia",
+  "artist": "somgrow",
+
+  "md5": "bc5fd278a5b4c4179dd06b2fdbfcf805",
+  "sha256": "c9590bb659c3fec514559b2acd18a79c6d7d185ac0142afc06ecfacaf8f36a2e",
+
+  "bpm": 135,
+  "notes": 656,
+  "total": 382,
+  "length": 115.56,
+  "judge": "normal"
+}

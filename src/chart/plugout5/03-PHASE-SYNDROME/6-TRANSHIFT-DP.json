@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:SYNDROME" },
+
+  "songId": "06-transhift",
+  "player": "double",
+  "level": 5,
+  "genre": "HYPERTRANCE",
+  "title": "TRANSHIFT",
+  "artist": "Nakaiankow",
+
+  "md5": "1105791985f45a0c8d99b09d3710271a",
+  "sha256": "0b2f3f32b2cf68dff0322b103a06fd41ee736aaa9c4e7fc3a77c0e9525ddee50",
+
+  "bpm": 151.5,
+  "notes": 400,
+  "total": 283,
+  "length": 125.15,
+  "judge": "easy"
+}

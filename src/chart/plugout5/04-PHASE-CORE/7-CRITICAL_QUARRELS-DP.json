@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:CORE" },
+
+  "songId": "07-critical_quarrels",
+  "player": "double",
+  "level": 7,
+  "genre": "VOGUE HOUSE",
+  "title": "CRITICAL QUARRELS",
+  "artist": "Takuya Namba",
+
+  "md5": "92ab906fadb3f4eb20fbf927e45e9ed3",
+  "sha256": "4f5d8b5d41c8c87a737e534ceb985b5ee5024b108c30304e983db3a5c8978363",
+
+  "bpm": 135,
+  "notes": 709,
+  "total": 360,
+  "length": 99.0,
+  "judge": "normal"
+}

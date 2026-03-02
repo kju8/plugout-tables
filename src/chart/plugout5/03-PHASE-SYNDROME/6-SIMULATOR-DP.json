@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:SYNDROME" },
+
+  "songId": "06-simulator",
+  "player": "single",
+  "level": 6,
+  "genre": "MINIMAL",
+  "title": "SIMULATOR",
+  "artist": "潮音きつね",
+
+  "md5": "74a2b10ddaf32072f2f23c3d43d235eb",
+  "sha256": "f6c6f94e00697e31e06a4b9c4d045df975662f1eb6debaa6110f72d11773320e",
+
+  "bpm": 132,
+  "notes": 471,
+  "total": 325,
+  "length": 85.45,
+  "judge": "easy"
+}

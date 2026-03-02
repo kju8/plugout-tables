@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:SYNDROME" },
+
+  "songId": "05-waver",
+  "player": "double",
+  "level": 6,
+  "genre": "TECHNO",
+  "title": "WAVER",
+  "artist": "BANGLAR",
+
+  "md5": "57083b11ba86abe3a23bae08a1cfe170",
+  "sha256": "cebb7497b54c1d04c223693ebb8bcb5cb74bcda661e5f41810807fd6225546d3",
+
+  "bpm": 110,
+  "notes": 607,
+  "total": 283,
+  "length": 150.17,
+  "judge": "normal"
+}

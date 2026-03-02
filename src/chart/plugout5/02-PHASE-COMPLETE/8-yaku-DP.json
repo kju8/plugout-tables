@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:COMPLETE" },
+
+  "songId": "08-yaku",
+  "player": "double",
+  "level": 8,
+  "genre": "EXPERIMENTAL",
+  "title": "厄",
+  "artist": "空読無 白眼",
+
+  "md5": "35c151949476f3e90b739e0f872b4193",
+  "sha256": "bb56a4e6aec22cba030be614a36587a7573be8147323bac4f36393db4d0a950b",
+
+  "bpm": 92,
+  "notes": 747,
+  "total": 325,
+  "length": 127.83,
+  "judge": "hard"
+}

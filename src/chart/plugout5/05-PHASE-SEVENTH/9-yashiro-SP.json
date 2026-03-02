@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:SEVENTH" },
+
+  "songId": "09-yashiro",
+  "player": "single",
+  "level": 9,
+  "genre": "GORGE",
+  "title": "社(Yashiro)",
+  "artist": "KidZ G",
+
+  "md5": "73d6ae15ebacb09ffc1a4d47a22aba24",
+  "sha256": "918fdd7c63cb8ec0522fa8d5334273ac1cc81f091f9cba3585b589caa26afd39",
+
+  "bpm": 105,
+  "notes": 393,
+  "total": 275,
+  "length": 112.0,
+  "judge": "veryhard"
+}

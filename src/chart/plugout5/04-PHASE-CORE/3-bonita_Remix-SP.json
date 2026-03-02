@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:CORE" },
+
+  "songId": "03-bonita_remix",
+  "player": "single",
+  "level": 3,
+  "genre": "BRAZILIAN DRUM'N'BASS",
+  "title": "bonita (EVEN IF IT WAS YOUR SOUND mix)",
+  "artist": "zonguergue remixed by kju8",
+
+  "md5": "7037db41261316b1a12e8b4d8ae782e1",
+  "sha256": "33bace2160418202a953b78b4d22f5a778a085f99891da757d9a9db7f0ef3801",
+
+  "bpm": 165.2,
+  "notes": 186,
+  "total": 270,
+  "length": 84.26,
+  "judge": "normal"
+}

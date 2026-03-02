@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:CORE" },
+
+  "songId": "09-dr_child",
+  "player": "double",
+  "level": 9,
+  "genre": "BREAKCORE",
+  "title": "DR.CHILD",
+  "artist": "pencil",
+
+  "md5": "684ce6fccbe2475f4b67502ba75b0f50",
+  "sha256": "3e7b130a606dd7e7cf70520925bbbb75c62009617f28a3ad4b392d6efa284cb6",
+
+  "bpm": 215,
+  "notes": 1012,
+  "total": 420,
+  "length": 90.42,
+  "judge": "normal"
+}

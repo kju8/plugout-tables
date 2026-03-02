@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:COMPLETE" },
+
+  "songId": "02-cats_walk",
+  "player": "single",
+  "level": 2,
+  "genre": "MINIMAL SYNTH",
+  "title": "CAT'S WALK",
+  "artist": "Kud Cuisune",
+
+  "md5": "cccd5602346d5f30f2f9742c00836978",
+  "sha256": "fa08832b56aeb1bf6883a22a78acd15a32aa994d3e56526854c1d2995a7f16ae",
+
+  "bpm": 88,
+  "notes": 218,
+  "total": 200,
+  "length": 112.16,
+  "judge": "normal"
+}

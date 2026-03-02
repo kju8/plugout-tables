@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:FIRST" },
+
+  "songId": "04-beam",
+  "player": "double",
+  "level": 4,
+  "genre": "PROGRESSIVE TECHNO",
+  "title": "BEAM",
+  "artist": "FROL",
+
+  "md5": "38a2bd32b0ce464040c23423773502ce",
+  "sha256": "d2253de6519fd18e24881cf6b13c908dcff0cde854a441ed6aabb3a404c10bd9",
+
+  "bpm": 150,
+  "notes": 634,
+  "total": 289,
+  "length": 128.9,
+  "judge": "easy"
+}

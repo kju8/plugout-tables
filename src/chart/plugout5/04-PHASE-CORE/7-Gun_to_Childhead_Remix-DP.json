@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:CORE" },
+
+  "songId": "07-gun_to_childhead_remix",
+  "player": "double",
+  "level": 8,
+  "genre": "HARD TECHNO",
+  "title": "Gun to Childhead FLOTAGE MIX",
+  "artist": "eicateve",
+
+  "md5": "954ffaaa676dadb4c7671f55918878b6",
+  "sha256": "c4776256fdb4319d7cd971d847c52e56dca9dc567f928537752d22acd142c365",
+
+  "bpm": 128,
+  "notes": 904,
+  "total": 433.33,
+  "length": 123.75,
+  "judge": "easy"
+}

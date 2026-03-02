@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:SEVENTH" },
+
+  "songId": "03-hb",
+  "player": "single",
+  "level": 3,
+  "genre": "J-ALTERNATIVE",
+  "title": "hb",
+  "artist": "FALL",
+
+  "md5": "38c29972c647db61d779e5a387e4b603",
+  "sha256": "2a8a973f16bc9606a522d0cc96326f7e6d2afc3f10f279af63dd45e695133495",
+
+  "bpm": 100,
+  "notes": 281,
+  "total": 284,
+  "length": 98.4,
+  "judge": "easy"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:SYNDROME" },
+
+  "songId": "01-syndrome",
+  "player": "single",
+  "level": 1,
+  "genre": "NEO SOUL",
+  "title": "SYNDROME",
+  "artist": "DOT96",
+
+  "md5": "a0ad3348bf19ede429a161b2ec3b81f4",
+  "sha256": "6b5a7f49670c75d0732dfa4f14766b63463317f4b5bb79ae6624ca7cb7aa4906",
+
+  "bpm": 90,
+  "notes": 127,
+  "total": 230,
+  "length": 108.67,
+  "judge": "normal"
+}

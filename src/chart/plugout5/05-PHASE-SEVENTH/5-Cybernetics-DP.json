@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:SEVENTH" },
+
+  "songId": "05-cybernetics",
+  "player": "double",
+  "level": 5,
+  "genre": "SYNTH WAVE",
+  "title": "CYBERNETICS",
+  "artist": "PRIDASK",
+
+  "md5": "9efaf3983144d37ec4a4f3b3a50b8b7b",
+  "sha256": "2c8230acdf83c85f42cae8c88df8cebf15ef121f52eca210eed75a0d7ae38137",
+
+  "bpm": 100,
+  "notes": 894,
+  "total": 352,
+  "length": 213.6,
+  "judge": "easy"
+}

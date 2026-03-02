@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:SYNDROME" },
+
+  "songId": "07-ultraviolet",
+  "player": "single",
+  "level": 7,
+  "genre": "PROGRESSIVE HOUSE",
+  "title": "ULTRAVIOLET",
+  "artist": "isocosa",
+
+  "md5": "0d625a4048a23c53b390e3960ed4b312",
+  "sha256": "7332f6b1166929aaf6e140150861ceb55ca367e8b473490be145f61efbafd8a6",
+
+  "bpm": 127,
+  "notes": 688,
+  "total": 400,
+  "length": 109.84,
+  "judge": "easy"
+}

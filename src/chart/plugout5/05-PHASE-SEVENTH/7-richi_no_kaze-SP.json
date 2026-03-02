@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:SEVENTH" },
+
+  "songId": "07-richi_no_kaze",
+  "player": "single",
+  "level": 7,
+  "genre": "FUSION",
+  "title": "律の風",
+  "artist": "Yamajet",
+
+  "md5": "9c4df1e26b922cef87d0425cb997cca3",
+  "sha256": "1d3a5803e340ea28afa777d30db72c5a30dc1aa6dddd2e21905b9ff7b54a25be",
+
+  "bpm": 140,
+  "notes": 544,
+  "total": 338,
+  "length": 95.78,
+  "judge": "easy"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:COMPLETE" },
+
+  "songId": "07-restless_rat",
+  "player": "single",
+  "level": 7,
+  "genre": "FUNK",
+  "title": "RESTLESS RAT",
+  "artist": "黄泉路テヂーモ",
+
+  "md5": "534437b007347aad00c67a8f346978bd",
+  "sha256": "313fe815b932493e25349b8c8e7c590c8abe43e189390761c85f1ae036d8e6ac",
+
+  "bpm": 105,
+  "notes": 725,
+  "total": 400.9,
+  "length": 149.14,
+  "judge": "normal"
+}

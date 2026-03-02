@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:COMPLETE" },
+
+  "songId": "04-awake_ast",
+  "player": "single",
+  "level": 4,
+  "genre": "SYNTH BREAK-BTS",
+  "title": "Awake AST",
+  "artist": "ぜらにも",
+
+  "md5": "68be13f854588c16bcfb0e905f78f94e",
+  "sha256": "947f8afb5eeef75f4a5ab368b34e7273d2f0547fdf3a52c411ee6957bf33c4ba",
+
+  "bpm": 140,
+  "notes": 325,
+  "total": 200,
+  "length": 102.64,
+  "judge": "normal"
+}

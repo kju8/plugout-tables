@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:SEVENTH" },
+
+  "songId": "05-solid_liquid_gas",
+  "player": "single",
+  "level": 5,
+  "genre": "DRUM N' BASS",
+  "title": "solid,liquid,gas",
+  "artist": "Constellation/R054",
+
+  "md5": "c0c4135439c8b4921722110f01393824",
+  "sha256": "7e71452a333fafaecbbdfb48a282ea8c3deb98ee7bf20c00ab9e9fa7fe5535f1",
+
+  "bpm": 180,
+  "notes": 359,
+  "total": 350,
+  "length": 102.67,
+  "judge": "easy"
+}

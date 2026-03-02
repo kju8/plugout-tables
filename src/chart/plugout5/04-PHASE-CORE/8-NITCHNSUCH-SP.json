@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:CORE" },
+
+  "songId": "08-nitchnsuch",
+  "player": "single",
+  "level": 8,
+  "genre": "MOOMBAHCORE",
+  "title": "NITCH'N'SUCH",
+  "artist": "scytheleg",
+
+  "md5": "4ab3da072835e7fc95179e8bd2ffccff",
+  "sha256": "1e45ff01eeedb71ceaf5acf903b94b983ac84f591b74a9b4f61b2f5cf6d32e25",
+
+  "bpm": [115, 230],
+  "notes": 709,
+  "total": 282,
+  "length": 127.3,
+  "judge": "normal"
+}

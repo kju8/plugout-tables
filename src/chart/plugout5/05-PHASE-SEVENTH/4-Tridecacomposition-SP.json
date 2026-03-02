@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:SEVENTH" },
+
+  "songId": "04-tridecacomposition",
+  "player": "single",
+  "level": 4,
+  "genre": "FUTURE BASS",
+  "title": "Tridecacomposition",
+  "artist": "CirCy vs. U-MA",
+
+  "md5": "0089953a3be804e55cdb24269218baca",
+  "sha256": "43a89bf01c641e3852e64448cb0d5a7d41fa8a618d8b8a46d8f2f23efb39ca2a",
+
+  "bpm": 90,
+  "notes": 318,
+  "total": 159,
+  "length": 118.5,
+  "judge": "normal"
+}

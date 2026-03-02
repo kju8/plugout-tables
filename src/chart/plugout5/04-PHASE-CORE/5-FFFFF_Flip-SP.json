@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:CORE" },
+
+  "songId": "05-fffff_flip",
+  "player": "single",
+  "level": 5,
+  "genre": "BAILE FUNK",
+  "title": "FRONTLESS FROGS FROM FROSTY FRONTIER (FLAMMABLE FLIP)",
+  "artist": "cybermiso remixed by FRONTALICE",
+
+  "md5": "6373dbe8c74dc8f52c1c229722f485f4",
+  "sha256": "8dcc85c41c2edd48a21aacb15db0b190b0a0d7633a038aa9fb247aaf2709ee9a",
+
+  "bpm": 130,
+  "notes": 384,
+  "total": 380,
+  "length": 104.9,
+  "judge": "hard"
+}

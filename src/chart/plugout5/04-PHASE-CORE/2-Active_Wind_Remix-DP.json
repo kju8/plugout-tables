@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:CORE" },
+
+  "songId": "02-active_wind_remix",
+  "player": "double",
+  "level": 2,
+  "genre": "SPEEDBASS",
+  "title": "Active Wind (AWAKENING MIX)",
+  "artist": "atmosphere remixed by Neun_jack",
+
+  "md5": "b4e2d1cc15715bd1952dcfc4b2e9b3a0",
+  "sha256": "a889e656dd86f06fc561e9b63feb2ab4ed1da5ae756c6b37d946efdc4939e7aa",
+
+  "bpm": 180,
+  "notes": 264,
+  "total": 250,
+  "length": 142.67,
+  "judge": "normal"
+}

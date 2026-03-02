@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:CORE" },
+
+  "songId": "01-talk",
+  "player": "double",
+  "level": 2,
+  "genre": "POEMCORE",
+  "title": "Talk",
+  "artist": "8 to 7",
+
+  "md5": "a97beb94c66c9a0f70cb441a9644ebf4",
+  "sha256": "2c24f3d3c96f397128c758309fa1b7a826fc2542f24001b06843f84aa0754877",
+
+  "bpm": 98,
+  "notes": 142,
+  "total": 265,
+  "length": 125.51,
+  "judge": "normal"
+}

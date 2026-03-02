@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:SEVENTH" },
+
+  "songId": "06-bokurasagasiteru",
+  "player": "single",
+  "level": 6,
+  "genre": "POPS",
+  "title": "僕ら探してる",
+  "artist": "カナイリョウタ",
+
+  "md5": "4fee3d0fed5dd8444626139fb351dd8c",
+  "sha256": "f9805a8270b96aa116e541198f8eb9f3cd4320d4b2e9cee06342fa81be1f67cb",
+
+  "bpm": 160,
+  "notes": 954,
+  "length": 181.88,
+  "judge": "easy"
+}

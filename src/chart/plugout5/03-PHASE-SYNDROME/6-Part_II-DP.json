@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:SYNDROME" },
+
+  "songId": "06-part_ii",
+  "player": "single",
+  "level": 8,
+  "genre": "M-Base",
+  "title": "Part Ⅱ",
+  "artist": "lunav",
+
+  "md5": "769a616046711cfe6fd7713c5be203e2",
+  "sha256": "8be4ec55688589c9903322f3989179bae9fd5b9c5842bbc05d207ca9d4315441",
+
+  "bpm": 160,
+  "notes": 900,
+  "total": 400,
+  "length": 94.88,
+  "judge": "normal"
+}

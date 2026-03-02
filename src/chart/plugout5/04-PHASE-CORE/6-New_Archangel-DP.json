@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:CORE" },
+
+  "songId": "06-new_archangel",
+  "player": "double",
+  "level": 6,
+  "genre": "ATMOSPHERIC DRUM'N'BASS",
+  "title": "New_Archangel",
+  "artist": "Du Vel Mat Te",
+
+  "md5": "dc7466444f49666085f8f6e8afdf5b4f",
+  "sha256": "301030e1969ff2acbcae859a460cfdb17bac263894842b4d86e8a3f7c04872db",
+
+  "bpm": 169,
+  "notes": 532,
+  "total": 369,
+  "length": 116.18,
+  "judge": "normal"
+}

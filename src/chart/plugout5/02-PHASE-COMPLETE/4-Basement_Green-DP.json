@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:COMPLETE" },
+
+  "songId": "04-basement_green",
+  "player": "double",
+  "level": 5,
+  "genre": "DEEP HOUSE",
+  "title": "Basement Green",
+  "artist": "6CHA9N",
+
+  "md5": "5ad865e8c7945dc77d8570c23c8ef98d",
+  "sha256": "eb760ea6d63ed6af1dd6b5e0ba45530a396701094c8675be8b54dea0c2acd980",
+
+  "bpm": 128,
+  "notes": 324,
+  "total": 260,
+  "length": 107.69,
+  "judge": "hard"
+}

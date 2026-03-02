@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:SEVENTH" },
+
+  "songId": "03-the_theme_of_highten",
+  "player": "double",
+  "level": 3,
+  "genre": "FOLKTRONICA",
+  "title": "The theme of Highten",
+  "artist": "微熱 & トラチカ",
+
+  "md5": "6d30edf30360f66b9f2aab01368b8b0b",
+  "sha256": "44c2907f70230b6ed732d5fe47d1a14d0f79013a2a522e885f2e8cd02fc37c8f",
+
+  "bpm": 135,
+  "notes": 376,
+  "total": 310,
+  "length": 125.51,
+  "judge": "easy"
+}

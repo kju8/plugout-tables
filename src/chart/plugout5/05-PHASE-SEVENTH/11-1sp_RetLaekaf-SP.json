@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:SEVENTH" },
+
+  "songId": "11-1sp_retlaekaf",
+  "player": "single",
+  "level": 11,
+  "genre": "ORBCORE",
+  "title": "1sp.RetLaekaf",
+  "artist": "19xx",
+
+  "md5": "5a902525109234bca7bbe3d20ff0946e",
+  "sha256": "28d0b01ea1f84f212095861e024b133841c8073cdd20a18f3bc930302971f60f",
+
+  "bpm": 190,
+  "notes": 975,
+  "total": 410,
+  "length": 128.96,
+  "judge": "normal"
+}

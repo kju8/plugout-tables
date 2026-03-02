@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:CORE" },
+
+  "songId": "09-chaotic_cities",
+  "player": "double",
+  "level": 9,
+  "genre": "LIQUID DRUM'N'BASS",
+  "title": "Chaotic Cities",
+  "artist": "Xacla",
+
+  "md5": "ef917e36856ea4041ce5784309d220bb",
+  "sha256": "3b2d584cd7dbc9bf8eda96d454f0266a353763d61be6f1fca804e0551e18bd64",
+
+  "bpm": 172,
+  "notes": 633,
+  "total": 300,
+  "length": 103.08,
+  "judge": "hard"
+}

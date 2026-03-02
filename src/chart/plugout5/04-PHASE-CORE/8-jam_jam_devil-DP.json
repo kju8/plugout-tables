@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:CORE" },
+
+  "songId": "08-jam_jam_devil",
+  "player": "double",
+  "level": 7,
+  "genre": "RAGGATEK",
+  "title": "jam jam devil",
+  "artist": "uet",
+
+  "md5": "60d57998b2c6a2bcd886a2bd1b8b45a2",
+  "sha256": "0859194d52dc4ddb02d44c091314bc19d111de4a31ee41460cbb1862c6e3406c",
+
+  "bpm": 190,
+  "notes": 971,
+  "total": 460,
+  "length": 135.08,
+  "judge": "easy"
+}

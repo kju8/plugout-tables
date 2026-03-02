@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:COMPLETE" },
+
+  "songId": "02-beginning_of_reincarnation",
+  "player": "double",
+  "level": 5,
+  "genre": "PIANO AMBIENT",
+  "title": "Beginning of Reincarnation",
+  "artist": "tigerlily",
+
+  "md5": "98c2352590027493b5e55648a65cbfbf",
+  "sha256": "0336ee4114df37175d3080dbb7bc8192066281e940f685ab4a4c12914e6499f9",
+
+  "bpm": 89,
+  "notes": 378,
+  "total": 111,
+  "length": 97.08,
+  "judge": "easy"
+}

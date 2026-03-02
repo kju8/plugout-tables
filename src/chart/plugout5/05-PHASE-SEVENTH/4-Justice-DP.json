@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:SEVENTH" },
+
+  "songId": "04-justice",
+  "player": "double",
+  "level": 4,
+  "genre": "FUTURE BASS",
+  "title": "JUSTICE",
+  "artist": "PRIDASK",
+
+  "md5": "ce2b3e8d0f22d1483135cc7a1a9829c1",
+  "sha256": "18bb9e19c23d89c1e547f07d562dcee511a15e04d0ed6d5b74b0bf6b1cc0196e",
+
+  "bpm": 150,
+  "notes": 469,
+  "total": 289,
+  "length": 194.8,
+  "judge": "normal"
+}

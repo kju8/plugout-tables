@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:CORE" },
+
+  "songId": "06-my_anthem_ground_mix",
+  "player": "double",
+  "level": 6,
+  "genre": "BREAKS",
+  "title": "My ANTHEM -GROUND MIX-",
+  "artist": "LU Remixed by ANKAKE",
+
+  "md5": "6d8d5c83b945fb2c336b5705e4ba87b4",
+  "sha256": "28d9b380b326ad21cad9d15d0f60b2bca5e7f95b34a8494c0df24224e831e9bf",
+
+  "bpm": 127,
+  "notes": 370,
+  "total": 276,
+  "length": 84.8,
+  "judge": "normal"
+}

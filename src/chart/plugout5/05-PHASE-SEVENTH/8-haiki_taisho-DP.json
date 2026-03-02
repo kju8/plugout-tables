@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:SEVENTH" },
+
+  "songId": "08-haiki_taisho",
+  "player": "double",
+  "level": 8,
+  "genre": "ELECTRONICA",
+  "title": "廃棄対象_ｱｦ・ｷﾅ",
+  "artist": "sasakure.UK × TJ.hangneil",
+
+  "md5": "bea5b5509bb73f8cf9e2da024c6f5aea",
+  "sha256": "f9bd18ddff89b6f69fbe6e24499087cf78a20dc6ae9c91a55ebd856042c48ae8",
+
+  "bpm": [60, 128],
+  "notes": 1187,
+  "length": 211.02,
+  "judge": "easy"
+}

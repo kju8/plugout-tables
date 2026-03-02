@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout5", "phase": "PHASE:SYNDROME" },
+
+  "songId": "05-harsh_mod",
+  "player": "single",
+  "level": 11,
+  "genre": "GLITCH HOP",
+  "title": "HARSH MOD (PREFUSED MIX)",
+  "artist": "nebulaimako / remix by Kokuusenshi",
+
+  "md5": "32a4c62fdb88b25613571b17438cf355",
+  "sha256": "e49682bce8f2590f40ff13f48c21150ff39d28d3cf9b6229121e986adbb52c30",
+
+  "bpm": 131,
+  "notes": 734,
+  "total": 320,
+  "length": 107.86,
+  "judge": "normal"
+}
