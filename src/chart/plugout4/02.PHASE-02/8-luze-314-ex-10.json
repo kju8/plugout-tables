@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-02" },
+
+  "songId": "8-luze-314",
+  "player": "double",
+  "level": 11,
+  "genre": "PSYTEC",
+  "title": "3.14 (TT mix)",
+  "artist": "ルゼ",
+
+  "md5": "77d8ecaf8182bd000c429a1831397304",
+  "sha256": "27757a83123ea4b93be9558b4cf6fd3ec05a553d64f084f09ed1d429a53e20aa",
+
+  "bpm": 159,
+  "notes": 963,
+  "total": 314,
+  "length": 110.94,
+  "judge": "normal"
+}

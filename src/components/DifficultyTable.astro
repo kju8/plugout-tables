@@ -141,16 +141,36 @@ const iidxTotal = (notes: number) => (7.605 * notes) / (0.01 * notes + 6.5);
 
   #chart_table > div[data-level] {
     --level: attr(data-level type(<number>));
-    --level-filter: min(max(calc(var(--level) - 9), 0), 1);
+    --level-low: min(max(calc(var(--level) - 5), 0), 1);
+    --level-hi: min(max(calc(var(--level) - 9), 0), 1);
+
+    --color-low: color-mix(
+      in lch,
+      green,
+      yellow calc(25% * calc(var(--level) - 1))
+    );
+    --color-mid: color-mix(
+      in lch,
+      yellow,
+      red calc(25% * calc(var(--level) - 5))
+    );
+    --color-hi: color-mix(
+      in lch,
+      red,
+      purple calc(25% * calc(var(--level) - 9))
+    );
 
     --diffcolor: color-mix(
       in hsl,
-      color-mix(in lch, green, red calc(12.5% * calc(var(--level) - 1))),
-      color-mix(in lch, red, purple calc(25% * calc(var(--level) - 9)))
-        calc(100% * var(--level-filter))
+      color-mix(
+        in hsl,
+        var(--color-low),
+        var(--color-mid) calc(100% * var(--level-low))
+      ),
+      var(--color-hi) calc(100% * var(--level-hi))
     );
 
-    background-color: color-mix(in srgb, var(--diffcolor), transparent 60%);
+    background-color: color-mix(in srgb, var(--diffcolor), transparent 80%);
   }
 
   #chart_table > div[data-judge="easy"] {
@@ -176,7 +196,7 @@ const iidxTotal = (notes: number) => (7.605 * notes) / (0.01 * notes + 6.5);
   }
 
   #chart_table > div:nth-child(15n + 1) {
-    font-size: smaller;
+    font-size: 0.7rem;
     font-weight: bold;
   }
 

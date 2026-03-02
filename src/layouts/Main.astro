@@ -16,10 +16,19 @@ const { title, data } = Astro.props;
     <div id="container">
       <slot />
     </div>
-  </body><style>
-    #container {
-      width: max-content;
-      margin: 0 auto;
-    }
-  </style>
+    <style>
+      @reference "../styles/global.css";
+
+      body {
+        @apply bg-slate-800;
+      }
+
+      #container {
+        @apply bg-slate-50/80 rounded-lg shadow-xl shadow-black;
+        width: max-content;
+        margin: 2rem auto;
+        padding: 2rem 1rem;
+      }
+    </style>
+  </body>
 </html>

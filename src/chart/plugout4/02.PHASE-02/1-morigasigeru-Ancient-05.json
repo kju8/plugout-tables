@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-02" },
+
+  "songId": "1-morigasigeru-Ancient",
+  "player": "single",
+  "level": 1,
+  "genre": "DUBSTEP",
+  "title": "Ancient",
+  "artist": "morigasigeru",
+
+  "md5": "d9bc4393a9fff514ed4f3c2826fbb36c",
+  "sha256": "2da73f2a8fb13dba1df9661ffcfba33210880c92c5980a3db61bf8b36e693818",
+
+  "bpm": 140,
+  "notes": 142,
+  "total": 250,
+  "length": 111.0,
+  "judge": "normal"
+}

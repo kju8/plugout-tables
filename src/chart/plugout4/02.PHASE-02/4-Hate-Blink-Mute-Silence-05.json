@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-02" },
+
+  "songId": "4-Hate-Blink-Mute-Silence",
+  "player": "single",
+  "level": 4,
+  "genre": "DIGI-ROCK",
+  "title": "Blink-Mute-Silence",
+  "artist": "Hate+",
+
+  "md5": "c9ebde7d4b482d30de18f69b1ffc6c57",
+  "sha256": "1b79429ab39ea85b29874e5c7c3e3abbb6c73d4145804c17fb1b19cb793da14d",
+
+  "bpm": [41.5, 166],
+  "notes": 362,
+  "total": 220,
+  "length": 97.59,
+  "judge": "normal"
+}

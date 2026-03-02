@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-02" },
+
+  "songId": "7-i_am_robot-BEPEN",
+  "player": "single",
+  "level": 10,
+  "genre": "MINIMAL",
+  "title": "BEPEN (The robot is not an organism mix)",
+  "artist": "i am robot (remixed by LU)",
+
+  "md5": "81a88aa57a2ad574e4aac46f4c3f2c38",
+  "sha256": "022d72130f482ab8e53601251430318d66ad5f5264863335910ef913db8e3b5a",
+
+  "bpm": 141,
+  "notes": 938,
+  "total": 300,
+  "length": 96.81,
+  "judge": "normal"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-02" },
+
+  "songId": "9-rife-Ire",
+  "player": "double",
+  "level": 9,
+  "genre": "Nu Skool Breaks",
+  "title": "Ire",
+  "artist": "rife",
+
+  "md5": "ad838bd71855112ffc403968dc006596",
+  "sha256": "95060b91a8ca203ca72de1ea5100a43b27748fdd72c147af0b5d365a6daec21a",
+
+  "bpm": [6, 159],
+  "notes": 884,
+  "total": 350,
+  "length": 110.19,
+  "judge": "normal"
+}

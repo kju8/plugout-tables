@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-02" },
+
+  "songId": "8-luze-314",
+  "player": "single",
+  "level": 8,
+  "genre": "PSYTEC",
+  "title": "3.14",
+  "artist": "ルゼ",
+
+  "md5": "ff7d4f39cc46eb0070a9dc5d4b242e24",
+  "sha256": "a5a96a30112c89fadfcbf90a8f845a896694661957b23bace817f4d8a2f09d2e",
+
+  "bpm": 159,
+  "notes": 768,
+  "total": 314,
+  "length": 110.19,
+  "judge": "easy"
+}

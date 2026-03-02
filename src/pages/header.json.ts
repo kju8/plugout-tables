@@ -7,6 +7,7 @@ export const GET = (({ params, request }) => {
       data_url: new URL(request.url).origin + "/data.json",
       symbol: "☆",
       level_order: [...Array(14).keys()].map((i) => i),
+      mode: "beat-5k",
     }),
   );
 }) satisfies APIRoute;

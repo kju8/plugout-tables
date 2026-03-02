@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-02" },
+
+  "songId": "3-copyyyy-alignment_you_you",
+  "player": "single",
+  "level": 3,
+  "genre": "EXPERIMENTAL POP",
+  "title": "alignment you you",
+  "artist": "copyyyy",
+
+  "md5": "a4fc3c6adbf2eb4198da19f90096a679",
+  "sha256": "1dfcf767366f4718b38a7dd7107b805f53c573c750f84293a3b09490b63beb4d",
+
+  "bpm": 134,
+  "notes": 334,
+  "total": 230,
+  "length": 111.49,
+  "judge": "normal"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-02" },
+
+  "songId": "9-rife-Ire",
+  "player": "double",
+  "level": 12,
+  "genre": "NU SKOOL BREAKS",
+  "title": "Ire -a lie notes-",
+  "artist": "Rife",
+
+  "md5": "0dfe4bce0ef8b7ed87e33f0231c8b42d",
+  "sha256": "0df5583e9f6a703439b3835712a52c3575f8213c9f12764603bb7fb88dd0729d",
+
+  "bpm": [2, 4000],
+  "notes": 926,
+  "total": 450,
+  "length": 91.79,
+  "judge": "normal"
+}

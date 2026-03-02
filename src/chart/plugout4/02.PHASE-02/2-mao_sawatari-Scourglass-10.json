@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-02" },
+
+  "songId": "2-mao_sawatari-Scourglass",
+  "player": "double",
+  "level": 2,
+  "genre": "BREAKS",
+  "title": "Scourglass",
+  "artist": "mao sawatari",
+
+  "md5": "925a7412aa1c19ba6300351db8a86cc7",
+  "sha256": "f2963ba768e0c6ec3edccc18608b1d5719aa681278a79cad0ea148ce69cdb02f",
+
+  "bpm": 132,
+  "notes": 240,
+  "total": 200,
+  "length": 103.52,
+  "judge": "normal"
+}

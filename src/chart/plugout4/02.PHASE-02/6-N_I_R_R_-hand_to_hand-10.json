@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-02" },
+
+  "songId": "6-N_I_R_R_-hand_to_hand",
+  "player": "single",
+  "level": 6,
+  "genre": "WORLD GROOVE",
+  "title": "hand to hand",
+  "artist": "N.I.R.R.",
+
+  "md5": "90379a2fc6a63e23030032fbdc168c12",
+  "sha256": "2aab2497a9eb9cd048d2da81261e62d0fcb613b4fa9d92e371d4853f3b768ac6",
+
+  "bpm": 130,
+  "notes": 779,
+  "total": 310,
+  "length": 112.61,
+  "judge": "normal"
+}

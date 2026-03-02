@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-02" },
+
+  "songId": "5-KARAKURUM-FIREWORKS",
+  "player": "single",
+  "level": 5,
+  "genre": "TECH HOUSE",
+  "title": "FIREWORKS",
+  "artist": "KARAKURUM",
+
+  "md5": "8d6d9b8fa80260350b6a72a3e50a3dad",
+  "sha256": "8d1680640cc16a5ed7af3c7f7ec1c6284f663f317c262b90fe293b40ace63dca",
+
+  "bpm": 128,
+  "notes": 649,
+  "total": 270,
+  "length": 121.41,
+  "judge": "hard"
+}

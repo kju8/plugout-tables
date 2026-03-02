@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-02" },
+
+  "songId": "7-i_am_robot-BEPEN",
+  "player": "double",
+  "level": 7,
+  "genre": "EXPERIMENTAL TECHNO",
+  "title": "BEPEN",
+  "artist": "i am robot",
+
+  "md5": "b86c429af6b8b5c9febf2da235d6433b",
+  "sha256": "828e9a7cea892806aac5c1343ac40be383d90e07fe0f38cdc3f04263e9aa1b5a",
+
+  "bpm": 141,
+  "notes": 574,
+  "total": 280,
+  "length": 96.06,
+  "judge": "normal"
+}
