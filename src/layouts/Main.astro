@@ -1,4 +1,5 @@
 ---
+import { SEO } from "astro-seo";
 import "../styles/global.css";
 const { title, data } = Astro.props;
 ---
@@ -7,6 +8,7 @@ const { title, data } = Astro.props;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <SEO />
     <meta name="bmstable" content={Astro.url.origin + "/" + data} />
     <title>{title}</title>
   </head>
@@ -14,9 +16,7 @@ const { title, data } = Astro.props;
     <div id="container">
       <slot />
     </div>
-  </body>
-
-  <style>
+  </body><style>
     #container {
       width: max-content;
       margin: 0 auto;
