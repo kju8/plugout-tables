@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-03" },
+
+  "songId": "4-kotirasample-funuke",
+  "player": "double",
+  "level": 4,
+  "genre": "FUTURE JAZZ",
+  "title": "Funuke Show Some Love",
+  "artist": "Kotira Sample",
+
+  "md5": "785ae42be2cf2750e3387a532c1fca99",
+  "sha256": "03147b120a003c4edfe3d8aeff180fef7fcce72ed00496982a7e7e7b32c0932e",
+
+  "bpm": 100,
+  "notes": 335,
+  "total": 232,
+  "length": 98.4,
+  "judge": "hard"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-03" },
+
+  "songId": "8-8_18MHz-trick_J_O",
+  "player": "double",
+  "level": 8,
+  "genre": "NEUROFUNK",
+  "title": "trick from J.O. (besides KILL KILL KILL Remix)",
+  "artist": "81.8MHz (Remixed by 日本ドラムンベース協会)",
+
+  "md5": "53da17ef1228dd869de62530cc74c700",
+  "sha256": "de673f61ef041a5946bd0c007b352cf845006c730178aec3f3021372e853ec0e",
+
+  "bpm": 181,
+  "notes": 678,
+  "total": 356,
+  "length": 107.24,
+  "judge": "normal"
+}

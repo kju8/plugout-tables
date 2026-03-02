@@ -106,12 +106,11 @@ const iidxTotal = (notes: number) => (7.605 * notes) / (0.01 * notes + 6.5);
 </div>
 
 <style>
-  #chart_table {
-    border-top: 1px solid #333;
-    border-left: 1px solid #333;
+  @import "tailwindcss";
 
-    width: 100%;
-    display: grid;
+  #chart_table {
+    @apply w-full grid border-t border-l border-mist-800/40;
+
     font-size: 0.8rem;
 
     grid-template-columns:
@@ -119,7 +118,7 @@ const iidxTotal = (notes: number) => (7.605 * notes) / (0.01 * notes + 6.5);
       minmax(max-content, 0.8fr)
       minmax(max-content, 2fr)
       minmax(max-content, 1.2fr)
-      min-content max-content min-content min-content min-content min-content min-content;
+      min-content max-content max-content min-content min-content min-content min-content;
   }
 
   #chart_table:not(.multimode) {
@@ -128,13 +127,13 @@ const iidxTotal = (notes: number) => (7.605 * notes) / (0.01 * notes + 6.5);
       minmax(max-content, 0.8fr)
       minmax(max-content, 2fr)
       minmax(max-content, 1.2fr)
-      min-content max-content min-content min-content min-content min-content min-content;
+      min-content max-content max-content min-content min-content min-content min-content;
   }
 
   #chart_table > div {
+    @apply border-b border-r border-mist-800/40;
+
     position: relative;
-    border-bottom: 1px solid #333;
-    border-right: 1px solid #333;
     padding: 0.2rem 0.5rem;
     text-align: center;
   }
@@ -146,18 +145,18 @@ const iidxTotal = (notes: number) => (7.605 * notes) / (0.01 * notes + 6.5);
 
     --color-low: color-mix(
       in lch,
-      green,
-      yellow calc(25% * calc(var(--level) - 1))
+      var(--color-green-500),
+      var(--color-yellow-400) calc(25% * calc(var(--level) - 1))
     );
     --color-mid: color-mix(
       in lch,
-      yellow,
-      red calc(25% * calc(var(--level) - 5))
+      var(--color-yellow-400),
+      var(--color-red-500) calc(25% * calc(var(--level) - 5))
     );
     --color-hi: color-mix(
       in lch,
-      red,
-      purple calc(25% * calc(var(--level) - 9))
+      var(--color-red-500),
+      var(--color-violet-500) calc(25% * calc(var(--level) - 9))
     );
 
     --diffcolor: color-mix(
@@ -174,23 +173,23 @@ const iidxTotal = (notes: number) => (7.605 * notes) / (0.01 * notes + 6.5);
   }
 
   #chart_table > div[data-judge="easy"] {
-    background-color: color-mix(in srgb, green, transparent 80%);
+    @apply bg-green-400/30;
   }
 
   #chart_table > div[data-judge="normal"] {
-    background-color: color-mix(in srgb, yellow, transparent 80%);
+    @apply bg-yellow-400/30;
   }
 
   #chart_table > div[data-judge="hard"] {
-    background-color: color-mix(in srgb, red, transparent 80%);
+    @apply bg-red-500/30;
   }
 
   #chart_table > div[data-judge="veryhard"] {
-    background-color: color-mix(in srgb, purple, transparent 80%);
+    @apply bg-purple-500/30;
   }
 
   #chart_table > div:nth-child(-n + 15) {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: bold;
     padding: 0.2rem 0.3rem;
   }

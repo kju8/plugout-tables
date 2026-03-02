@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-03" },
+
+  "songId": "1-titose_to_the_mlf-good_bye",
+  "player": "single",
+  "level": 1,
+  "genre": "BREAKBEATS",
+  "title": "グッド・バイ",
+  "artist": "チトセとthe mlf",
+
+  "md5": "a75bb67b87daa2d8c59f9888fcfd4dd4",
+  "sha256": "a1cbf37a356c745ac2c945cb964c94dca9e4ea069e586f0d4a8c179d759c8343",
+
+  "bpm": [37, 148],
+  "notes": 122,
+  "total": 120,
+  "length": 159.73,
+  "judge": "hard"
+}

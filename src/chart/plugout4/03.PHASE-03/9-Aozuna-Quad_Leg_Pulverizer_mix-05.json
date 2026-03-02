@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-03" },
+
+  "songId": "9-Aozuna-Quad_Leg_Pulverizer_mix",
+  "player": "single",
+  "level": 9,
+  "genre": "GOREGRIND",
+  "title": "Quad Leg Pulverizer",
+  "artist": "Aozuna",
+
+  "md5": "1bc57901a8137e750f8e10d9e8da473b",
+  "sha256": "bae4afc682d98de7661fd557d2e21eb02ec79bd32a07f1b68ea14de8c5980c02",
+
+  "bpm": 240,
+  "notes": 903,
+  "total": 459,
+  "length": 105.0,
+  "judge": "normal"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-03" },
+
+  "songId": "8-8_18MHz-trick_J_O",
+  "player": "single",
+  "level": 10,
+  "genre": "DRUMSTEP",
+  "title": "trick from J.O. (STRUCTURE MIX)",
+  "artist": "81.8MHz (Remixed by Ansie Antelope)",
+
+  "md5": "18c6f31aa03b419b7523e3b265c97da6",
+  "sha256": "e9a57e36c6e430e47af5b201975834f27300e480c55460d06f5c07f52400c85a",
+
+  "bpm": 181,
+  "notes": 624,
+  "total": 285,
+  "length": 106.91,
+  "judge": "normal"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-03" },
+
+  "songId": "3-hontanichan-money",
+  "player": "single",
+  "level": 3,
+  "genre": "DARK GARAGE",
+  "title": "money",
+  "artist": "hontanichan",
+
+  "md5": "82275bae47103cfa40f14ce8c9961a5e",
+  "sha256": "02f7324b66edb6ae974457e8af729fab07c190166673faebae4bc7a2ba7b7120",
+
+  "bpm": 135,
+  "notes": 270,
+  "total": 180,
+  "length": 94.22,
+  "judge": "hard"
+}

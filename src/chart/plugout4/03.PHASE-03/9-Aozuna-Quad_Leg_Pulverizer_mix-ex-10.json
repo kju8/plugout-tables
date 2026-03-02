@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-03" },
+
+  "songId": "9-Aozuna-Quad_Leg_Pulverizer_mix",
+  "player": "double",
+  "level": 12,
+  "genre": "SPEEDCORE",
+  "title": "Quad Leg Pulverizer (With 3 ASSes mix)",
+  "artist": "Aozuna (remixed by LU)",
+
+  "md5": "d00e8b6f3cb0f28bcb4e098b1c1cddab",
+  "sha256": "77b607b6097f4538234f2bbf2e8609585236b32a3c7d1a22f478cab334df0caf",
+
+  "bpm": [120, 480],
+  "notes": 962,
+  "total": 459,
+  "length": 90.0,
+  "judge": "normal"
+}

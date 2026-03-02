@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-03" },
+
+  "songId": "2-xarva-Relaypoint",
+  "player": "single",
+  "level": 2,
+  "genre": "AMBIENT",
+  "title": "Relaypoint",
+  "artist": "xarva",
+
+  "md5": "8d642c715fd7f3764f9d7df2cabe2492",
+  "sha256": "82273c570befc993a449dc33bb1b69d1401918c6ffc210a79e2ab715502f7472",
+
+  "bpm": 92,
+  "notes": 99,
+  "total": 120,
+  "length": 106.96,
+  "judge": "hard"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-03" },
+
+  "songId": "7-siromaru-polymeric_congealment",
+  "player": "double",
+  "level": 11,
+  "genre": "SCHRANZ",
+  "title": "polymeric congealment",
+  "artist": "siromaru (Remixed by siromaru)",
+
+  "md5": "900796b8927240b1d8f9e4eb5fd6d2be",
+  "sha256": "29a390e76bb1563cfba0fc5f3a3a1946c69811f4fa2e65375b1115dad3975e06",
+
+  "bpm": 160,
+  "notes": 1330,
+  "total": 460,
+  "length": 103.87,
+  "judge": "easy"
+}

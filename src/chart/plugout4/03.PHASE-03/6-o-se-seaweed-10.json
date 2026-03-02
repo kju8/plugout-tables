@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-03" },
+
+  "songId": "6-o-se-seaweed",
+  "player": "double",
+  "level": 6,
+  "genre": "DOWNTEMPO PSY",
+  "title": "Seaweed",
+  "artist": "O-SE",
+
+  "md5": "b597b1537b95fa512d45c07fb7c4f62a",
+  "sha256": "ac27525ce01392904f015a0681cadc33790d97fe8aa75d97c35cf691c051bdc3",
+
+  "bpm": 113,
+  "notes": 565,
+  "total": 444,
+  "length": 117.88,
+  "judge": "hard"
+}

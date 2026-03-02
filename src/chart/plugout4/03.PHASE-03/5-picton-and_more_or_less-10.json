@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-03" },
+
+  "songId": "5-picton-and_more_or_less",
+  "player": "double",
+  "level": 5,
+  "genre": "HIP ROCK",
+  "title": "and more or less",
+  "artist": "picton",
+
+  "md5": "ff25060afbc219a14bca4db864594882",
+  "sha256": "7280663c74ec2fd64e8ae9b95bb1fe74399129210bb2ed77568954562176f947",
+
+  "bpm": [47, 95],
+  "notes": 368,
+  "total": 300,
+  "length": 102.01,
+  "judge": "hard"
+}
