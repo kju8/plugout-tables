@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-01" },
+
+  "songId": "8-DJ_Alit_from_BALI-Senang_Pesta",
+  "player": "double",
+  "level": 8,
+  "genre": "FUNKY KOTA",
+  "title": "Senang Pesta!",
+  "artist": "DJ Alit from BALI",
+
+  "md5": "06a71846e40a3ae64d79b0fc68cf2a3c",
+  "sha256": "7922767433f64ac682e0194a4fdf389e1404bc8043ea2b73a66752d15aa2f8d9",
+
+  "bpm": [80, 190],
+  "notes": 768,
+  "total": 275,
+  "length": 110.81,
+  "judge": "easy"
+}

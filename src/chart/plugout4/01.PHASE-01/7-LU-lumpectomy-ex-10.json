@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-01" },
+
+  "songId": "7-LU-lumpectomy",
+  "player": "double",
+  "level": 11,
+  "genre": "HARDSTEP DRUM'N'BASS",
+  "title": "lumpectomy (chop up mix)",
+  "artist": "LU (remixed by LU)",
+
+  "md5": "71e376466953d83a90122adbdc86e4b8",
+  "sha256": "5a1571ab8cc1ec24118c9a4a344a4378284275cd3b6539da037eda677293660d",
+
+  "bpm": 185,
+  "notes": 879,
+  "total": 200,
+  "length": 104.92,
+  "judge": "normal"
+}

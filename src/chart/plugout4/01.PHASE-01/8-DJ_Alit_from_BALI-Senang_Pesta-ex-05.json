@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-01" },
+
+  "songId": "8-DJ_Alit_from_BALI-Senang_Pesta",
+  "player": "single",
+  "level": 10,
+  "genre": "FUNKY KOTA",
+  "title": "Senang Pesta! (Bari Bari mix)",
+  "artist": "DJ Alit from BALI (remix by DJ IKR)",
+
+  "md5": "350425c8c71536db95498a96f428fd6e",
+  "sha256": "3735ec5774fd412281f47fd856761dd6304564133d9e5a95f1ace9dde91a6aef",
+
+  "bpm": [80, 190],
+  "notes": 914,
+  "total": 214,
+  "length": 110.81,
+  "judge": "easy"
+}

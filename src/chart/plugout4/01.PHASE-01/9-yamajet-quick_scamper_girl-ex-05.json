@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-01" },
+
+  "songId": "9-yamajet-quick_scamper_girl",
+  "player": "single",
+  "level": 12,
+  "genre": "BREAK CORE",
+  "title": "Quick Scamper Girl (Hyper Scamp-er Girl mix)",
+  "artist": "Yamajet (remix by Mr.Mazuyama)",
+
+  "md5": "d32d917eb8b5736c86ce587b260b22c6",
+  "sha256": "240afd67d49c07c6ddd5b0ba55069f224538abedec16897a76eceb2c5a0a9cdc",
+
+  "bpm": [0.99, 2200],
+  "notes": 975,
+  "total": 240,
+  "length": 91.28,
+  "judge": "normal"
+}

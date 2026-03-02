@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-01" },
+
+  "songId": "6-Morrigan-EVERETT",
+  "player": "double",
+  "level": 6,
+  "genre": "DRUM'N'BASS",
+  "title": "EVERETT",
+  "artist": "MORRIGAN",
+
+  "md5": "dedfbda8dbc51acad38a60f021fd7b34",
+  "sha256": "61c72d37fca2b1a08365500e4d3053e9aaed7c342d93e865a5bfd85649d5cac8",
+
+  "bpm": 160,
+  "notes": 484,
+  "total": 342,
+  "length": 105.0,
+  "judge": "normal"
+}

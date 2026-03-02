@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-01" },
+
+  "songId": "9-yamajet-quick_scamper_girl",
+  "player": "double",
+  "level": 9,
+  "genre": "BREAK CORE",
+  "title": "Quick Scamper Girl",
+  "artist": "Yamajet",
+
+  "md5": "11743eebfb7a4ef13d6a75bc7ef53f6c",
+  "sha256": "bed0a5b9d8f8349acfa2a4b4836b8642c7309b55f0cd88e412815df53ff43527",
+
+  "bpm": [100, 400],
+  "notes": 838,
+  "total": 338,
+  "length": 91.2,
+  "judge": "normal"
+}

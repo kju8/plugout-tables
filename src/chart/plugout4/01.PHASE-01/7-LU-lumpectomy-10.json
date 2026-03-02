@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-01" },
+
+  "songId": "7-LU-lumpectomy",
+  "player": "double",
+  "level": 7,
+  "genre": "HALFSTEP DRUM'N'BASS",
+  "title": "lumpectomy",
+  "artist": "LU",
+
+  "md5": "a402a57bd8b7a7a9add263976016f472",
+  "sha256": "d19c9556eb458e0b472ce79b5f9b6e62a14588da6241030ef3ce7642e74acdf6",
+
+  "bpm": 185,
+  "notes": 383,
+  "total": 256,
+  "length": 94.54,
+  "judge": "normal"
+}

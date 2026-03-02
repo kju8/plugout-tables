@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-01" },
+
+  "songId": "1-snowflake-persephone",
+  "player": "single",
+  "level": 1,
+  "genre": "PIANO AMBIENT",
+  "title": "Persephone",
+  "artist": "snowflake",
+
+  "md5": "58d34720c30b443e060ed481b717a5b2",
+  "sha256": "96c90b9d7e6d9fb93abc4897cd13096e7a8f7573c5eac8412d8d66ab93ba3d8e",
+
+  "bpm": 100,
+  "notes": 154,
+  "total": 128,
+  "length": 146.32,
+  "judge": "normal"
+}

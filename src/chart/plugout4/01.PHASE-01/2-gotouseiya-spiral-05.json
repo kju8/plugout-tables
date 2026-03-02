@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-01" },
+
+  "songId": "2-gotouseiya-spiral",
+  "player": "single",
+  "level": 2,
+  "genre": "DEEP HOUSE",
+  "title": "SPIRAL",
+  "artist": "Gotou Seiya",
+
+  "md5": "bdbd8c8c4672b89378d71eec7d0ca267",
+  "sha256": "14d0e73da4bc59c06572cf6378d5a880bb46afdf95a82248463a4ee15469160d",
+
+  "bpm": 124,
+  "notes": 244,
+  "total": 145,
+  "length": 109.6,
+  "judge": "easy"
+}

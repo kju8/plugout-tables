@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-01" },
+
+  "songId": "4-void-enrai",
+  "player": "single",
+  "level": 4,
+  "genre": "TECH DANCE",
+  "title": "enrai",
+  "artist": "void",
+
+  "md5": "e169c84025b8131f6111baeb82525655",
+  "sha256": "7e847119735e2c69de4969d76a4b4d49817a91fcd09fc63e1d6dd04ac0956bbd",
+
+  "bpm": 142,
+  "notes": 470,
+  "total": 245,
+  "length": 116.41,
+  "judge": "hard"
+}

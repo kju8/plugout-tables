@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-01" },
+
+  "songId": "3-FALL-CHAMELEONIC",
+  "player": "double",
+  "level": 3,
+  "genre": "ELECTRO DISCO",
+  "title": "CHAMELEONIC",
+  "artist": "FALL",
+
+  "md5": "0596f6619c99f68ac67e02e2e985769c",
+  "sha256": "d107dff6d0a2ddc7da04870a98cbcbfe4262aa2d80701edd2e8bc8a40b5b9d82",
+
+  "bpm": 127,
+  "notes": 252,
+  "total": 200,
+  "length": 96.38,
+  "judge": "normal"
+}

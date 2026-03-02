@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-01" },
+
+  "songId": "5-yujurie-The_childrens_of_Halloween",
+  "player": "single",
+  "level": 5,
+  "genre": "HARD HOUSE",
+  "title": "The childrens of Halloween.",
+  "artist": "yujurie",
+
+  "md5": "7e5322cd55a5853f752d9d5bc36b8034",
+  "sha256": "58b0f052f4b0f070d5720915e944cb8382b0939bcc33b14c69794aaf4c5fd3df",
+
+  "bpm": 150,
+  "notes": 552,
+  "total": 198,
+  "length": 105.6,
+  "judge": "normal"
+}
