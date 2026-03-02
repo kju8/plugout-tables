@@ -1,12 +1,13 @@
 ---
 import "../styles/global.css";
-const { title } = Astro.props;
+const { title, data } = Astro.props;
 ---
 
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="bmstable" content={data} />
     <title>{title}</title>
   </head>
   <body>

@@ -8,6 +8,9 @@ import { ChartSort } from "../lib/lib";
 const Charts = ChartSort(await getCollection("charts"));
 ---
 
-<MainLayout title="plugout Difficulty Table">
+<MainLayout
+  title="plugout Difficulty Table"
+  data={Astro.url.origin + "/header.json"}
+>
   <DifficultyTable multimode={true} list={Charts} />
 </MainLayout>
