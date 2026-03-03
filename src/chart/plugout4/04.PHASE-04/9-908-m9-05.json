@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-04" },
+
+  "songId": "9-908-m9",
+  "player": "single",
+  "level": 9,
+  "genre": "HARD MINIMAL",
+  "title": "m9",
+  "artist": "908",
+
+  "md5": "237593b5dbdae9dc4d7ac19f3db6708a",
+  "sha256": "36beadcb826ffdab1034a17e32315e7b82ba94c39585fc178f9dae191af2e1d1",
+
+  "bpm": 145,
+  "notes": 1048,
+  "total": 324,
+  "length": 107.59,
+  "judge": "normal"
+}

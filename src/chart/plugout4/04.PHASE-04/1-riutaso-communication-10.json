@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-04" },
+
+  "songId": "1-riutaso-communication",
+  "player": "double",
+  "level": 1,
+  "genre": "ELECTRO POP",
+  "title": "communication",
+  "artist": "Riutaso",
+
+  "md5": "294671604bd00a25f19e3694567f604f",
+  "sha256": "0964d05793aa231b2a86fa696f099445879a85b480ca2b84b8c166225fe7088d",
+
+  "bpm": 50,
+  "notes": 37,
+  "total": 105,
+  "length": 94.8,
+  "judge": "normal"
+}

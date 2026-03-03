@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-04" },
+
+  "songId": "8-xian_and_yuan_soft_rhyme_behind",
+  "player": "double",
+  "level": 8,
+  "genre": "LIQUID FUNK",
+  "title": "Soft Rhyme Behind",
+  "artist": "Xiang & Yuan",
+
+  "md5": "134286ef6613243fe4c95c5436156dae",
+  "sha256": "26af0460a7377f6d5496d13fcc0e3bc956e47cda60988d6ea60586b649d00876",
+
+  "bpm": 176,
+  "notes": 849,
+  "total": 366,
+  "length": 121.36,
+  "judge": "hard"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-04" },
+
+  "songId": "2-Hendrex-Snow_in_February",
+  "player": "single",
+  "level": 2,
+  "genre": "CHILLOUT",
+  "title": "Snow in February",
+  "artist": "Hendrex",
+
+  "md5": "03dbe6b7a1c5bb0d0537cec445a15d5c",
+  "sha256": "17d9ee54a197b0a13f8db7df1f3c42718160c01d8ce51e0af6e5bb6dc85debef",
+
+  "bpm": 124,
+  "notes": 212,
+  "total": 220,
+  "length": 127.74,
+  "judge": "easy"
+}

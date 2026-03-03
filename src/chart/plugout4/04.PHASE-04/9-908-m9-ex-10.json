@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-04" },
+
+  "songId": "9-908-m9",
+  "player": "double",
+  "level": 12,
+  "genre": "HARD MINIMAL",
+  "title": "m9 (KRKRM SLY Remix)",
+  "artist": "908 (remixed by KARAKURUM)",
+
+  "md5": "fb3969af0b85e9d1164f8e7d9938f9ca",
+  "sha256": "8f97f620001ac482a0a3f9ad74c2c9c4bc089ce2eb490bc7f7bfab9936ae3c70",
+
+  "bpm": 145,
+  "notes": 1386,
+  "total": 446,
+  "length": 107.59,
+  "judge": "normal"
+}

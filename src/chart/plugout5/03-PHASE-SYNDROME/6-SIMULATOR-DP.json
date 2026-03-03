@@ -3,7 +3,7 @@
   "package": { "series": "plugout5", "phase": "PHASE:SYNDROME" },
 
   "songId": "06-simulator",
-  "player": "single",
+  "player": "double",
   "level": 6,
   "genre": "MINIMAL",
   "title": "SIMULATOR",

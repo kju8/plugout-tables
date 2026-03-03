@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-04" },
+
+  "songId": "3-6735-floatage",
+  "player": "double",
+  "level": 3,
+  "genre": "ATMOSPHERIC DRUM'N'BASS",
+  "title": "floatage",
+  "artist": "6735",
+
+  "md5": "e0a615584d0401ab713ef26a136caa3e",
+  "sha256": "7eeafd8eee8969ddf662262dc32ee2536abda39517e224da458d858d6688e3e3",
+
+  "bpm": 174,
+  "notes": 324,
+  "total": 220,
+  "length": 107.59,
+  "judge": "normal"
+}

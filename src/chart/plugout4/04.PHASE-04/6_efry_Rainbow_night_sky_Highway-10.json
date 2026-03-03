@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-04" },
+
+  "songId": "6_efry_Rainbow_night_sky_Highway",
+  "player": "double",
+  "level": 6,
+  "genre": "JAZZ'N'BASS",
+  "title": "Rainbow Night,Sky Highway",
+  "artist": "efry",
+
+  "md5": "30f2cd97a0ee6265f7be6f098ebc7488",
+  "sha256": "a64a44a2c22dbf84165954434efda158b286be40744b718cdc22d19e8e3393c9",
+
+  "bpm": 174,
+  "notes": 629,
+  "total": 350,
+  "length": 111.72,
+  "judge": "normal"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-04" },
+
+  "songId": "8-xian_and_yuan_soft_rhyme_behind",
+  "player": "double",
+  "level": 11,
+  "genre": "JAZZSTEP",
+  "title": "Soft Rhyme Behind (1111REMIX)",
+  "artist": "Xiang & Yuan (Remixed by Ansie Antelope)",
+
+  "md5": "7dc33bd069982f10ca1014de8b34a2fb",
+  "sha256": "a62fcac4029673d78b58b96448d61fad96d6f4e719c62788271fa88d519cd98c",
+
+  "bpm": 176,
+  "notes": 961,
+  "total": 412,
+  "length": 121.36,
+  "judge": "normal"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-04" },
+
+  "songId": "4-96-burnuptune",
+  "player": "single",
+  "level": 4,
+  "genre": "TRIBAL TECH",
+  "title": "burn up tune",
+  "artist": "96",
+
+  "md5": "4964f253faee6685e1100434edfbd71f",
+  "sha256": "92158f9224db4b08af041398ad3783077edf81f0b8ea3325dafab41f1304f97c",
+
+  "bpm": 132,
+  "notes": 490,
+  "total": 226,
+  "length": 121.82,
+  "judge": "hard"
+}

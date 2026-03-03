@@ -69,7 +69,9 @@ const iidxTotal = (notes: number) => (7.605 * notes) / (0.01 * notes + 6.5);
             📈
           </a>
         </div>
-        <div>{v.data.player === "single" ? "SP" : "DP"}</div>
+        <div data-player={v.data.player}>
+          {v.data.player === "single" ? "SP" : "DP"}
+        </div>
         <div data-level={v.data.level}>☆{v.data.level}</div>
         <div>{v.data.genre}</div>
         <div>{v.data.title}</div>
@@ -83,9 +85,15 @@ const iidxTotal = (notes: number) => (7.605 * notes) / (0.01 * notes + 6.5);
             : v.data.bpm}
         </div>
         <div>{v.data.length.toFixed(2)} s</div>
-        <div>{v.data.notes}</div>
-        <div>{(v.data.notes / v.data.length).toFixed(3)}</div>
-        <div>
+        <div data-notes={v.data.notes}>{v.data.notes}</div>
+        <div data-dense={v.data.notes / v.data.length}>
+          {(v.data.notes / v.data.length).toFixed(3)}
+        </div>
+        <div
+          data-iidx={
+            (v.data.total ?? iidxTotal(v.data.notes)) / iidxTotal(v.data.notes)
+          }
+        >
           {v.data.total !== undefined ? (
             <>
               {v.data.total.toFixed(2)}
@@ -95,7 +103,7 @@ const iidxTotal = (notes: number) => (7.605 * notes) / (0.01 * notes + 6.5);
             "―――"
           )}
         </div>
-        <div>
+        <div data-tn={(v.data.total ?? iidxTotal(v.data.notes)) / v.data.notes}>
           {v.data.total !== undefined
             ? (v.data.total / v.data.notes).toFixed(3)
             : "―――"}
@@ -138,24 +146,32 @@ const iidxTotal = (notes: number) => (7.605 * notes) / (0.01 * notes + 6.5);
     text-align: center;
   }
 
+  #chart_table > div[data-player="single"] {
+    @apply bg-blue-400/30;
+  }
+
+  #chart_table > div[data-player="double"] {
+    @apply bg-red-400/30;
+  }
+
   #chart_table > div[data-level] {
     --level: attr(data-level type(<number>));
     --level-low: min(max(calc(var(--level) - 5), 0), 1);
     --level-hi: min(max(calc(var(--level) - 9), 0), 1);
 
     --color-low: color-mix(
-      in lch,
-      var(--color-green-500),
+      in hsl,
+      var(--color-teal-400),
       var(--color-yellow-400) calc(25% * calc(var(--level) - 1))
     );
     --color-mid: color-mix(
-      in lch,
+      in hsl,
       var(--color-yellow-400),
-      var(--color-red-500) calc(25% * calc(var(--level) - 5))
+      var(--color-red-600) calc(25% * calc(var(--level) - 5))
     );
     --color-hi: color-mix(
-      in lch,
-      var(--color-red-500),
+      in hsl,
+      var(--color-red-600),
       var(--color-violet-500) calc(25% * calc(var(--level) - 9))
     );
 
@@ -169,23 +185,105 @@ const iidxTotal = (notes: number) => (7.605 * notes) / (0.01 * notes + 6.5);
       var(--color-hi) calc(100% * var(--level-hi))
     );
 
-    background-color: color-mix(in srgb, var(--diffcolor), transparent 80%);
+    background-color: color-mix(in srgb, var(--diffcolor), transparent 75%);
   }
 
   #chart_table > div[data-judge="easy"] {
-    @apply bg-green-400/30;
+    @apply bg-green-400/25;
   }
 
   #chart_table > div[data-judge="normal"] {
-    @apply bg-yellow-400/30;
+    @apply bg-yellow-400/25;
   }
 
   #chart_table > div[data-judge="hard"] {
-    @apply bg-red-500/30;
+    @apply bg-red-500/25;
   }
 
   #chart_table > div[data-judge="veryhard"] {
-    @apply bg-purple-500/30;
+    @apply bg-purple-500/25;
+  }
+
+  #chart_table > div[data-notes] {
+    --chart-notes: attr(data-notes type(<number>));
+
+    --color-low: color-mix(
+      in hsl,
+      var(--color-green-400),
+      var(--color-red-600) min(calc(100% * var(--chart-notes) / 999), 100%)
+    );
+    --color-hi: color-mix(
+      in hsl,
+      var(--color-red-600),
+      var(--color-violet-500)
+        min(
+          calc(
+            100% * calc(atan(calc(var(--chart-notes) / 999)) - 45deg) / 45deg
+          ),
+          100%
+        )
+    );
+
+    --color-mixed: color-mix(
+      in hsl,
+      var(--color-low),
+      var(--color-hi)
+        calc(100% * max(min(calc(var(--chart-notes) - 999), 1), 0))
+    );
+
+    background-color: color-mix(in srgb, var(--color-mixed), transparent 75%);
+  }
+
+  #chart_table > div[data-dense] {
+    --dense-rate: attr(data-dense type(<number>));
+
+    background-color: color-mix(
+      in srgb,
+      color-mix(
+        in hsl,
+        var(--color-green-400),
+        var(--color-red-600) min(calc(100% * var(--dense-rate) / 12), 100%)
+      ),
+      transparent 75%
+    );
+  }
+
+  #chart_table > div[data-iidx] {
+    --totalRate: attr(data-iidx type(<number>));
+
+    --color-low: color-mix(
+      in hsl,
+      var(--color-red-600),
+      var(--color-yellow-400)
+        min(calc(100% * atan(var(--totalRate)) / 45deg), 100%)
+    );
+    --color-hi: color-mix(
+      in hsl,
+      var(--color-yellow-400),
+      var(--color-green-500)
+        min(calc(100% * calc(atan(var(--totalRate)) - 45deg) / 45deg), 100%)
+    );
+
+    --color-mixed: color-mix(
+      in hsl,
+      var(--color-low),
+      var(--color-hi)
+        calc(100% * min(calc(var(--totalRate) - mod(var(--totalRate), 1)), 1))
+    );
+
+    background-color: color-mix(in srgb, var(--color-mixed), transparent 75%);
+  }
+
+  #chart_table > div[data-tn] {
+    --totalRate: attr(data-tn type(<number>));
+
+    --color-total: color-mix(
+      in hsl,
+      var(--color-red-500),
+      var(--color-green-500) calc(100% * atan(var(--totalRate)) / 90deg)
+    );
+
+    background-color: color-mix(in srgb, var(--color-total), transparent 75%);
   }
 
   #chart_table > div:nth-child(-n + 15) {

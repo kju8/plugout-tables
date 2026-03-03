@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-04" },
+
+  "songId": "5-Mix_Master_M-2010#01",
+  "player": "double",
+  "level": 5,
+  "genre": "HIPHOP",
+  "title": "2010#01",
+  "artist": "Mix Master M",
+
+  "md5": "71b6d114cf96a3b9f3de7cade142b883",
+  "sha256": "aae9e3fc73d16653310b921ddb11160db5a43595e6a29129a3bd8d18ff362941",
+
+  "bpm": 95,
+  "notes": 400,
+  "total": 332,
+  "length": 113.68,
+  "judge": "easy"
+}

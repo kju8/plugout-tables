@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-04" },
+
+  "songId": "7-K_V_C_-Spangle",
+  "player": "single",
+  "level": 7,
+  "genre": "J-TEK",
+  "title": "Spangle",
+  "artist": "K.V.C.",
+
+  "md5": "bc753171046731eee7aa7d5fab75b4a5",
+  "sha256": "31941448d84cdcab04ba0a999e4858723df56998f906caf647799ee2c79fc6f2",
+
+  "bpm": 145,
+  "notes": 710,
+  "total": 392,
+  "length": 87.72,
+  "judge": "normal"
+}
