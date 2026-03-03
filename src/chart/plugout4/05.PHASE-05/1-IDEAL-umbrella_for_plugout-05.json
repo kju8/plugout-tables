@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-05" },
+
+  "songId": "1-IDEAL-umbrella_for_plugout",
+  "player": "single",
+  "level": 1,
+  "genre": "TRANCE",
+  "title": "umbrella (for plugout)",
+  "artist": "IDEAL",
+
+  "md5": "4b4e67fd1a4c262d6fd1d3e956adc565",
+  "sha256": "3479698fbeb8fa5f313bca75bf2ed6488d67c60966d8f094baefd8795bceea16",
+
+  "bpm": 133,
+  "notes": 111,
+  "total": 222,
+  "length": 111.88,
+  "judge": "normal"
+}

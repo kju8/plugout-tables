@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-05" },
+
+  "songId": "9_zen_Beyond_Forgiveness",
+  "player": "single",
+  "level": 12,
+  "genre": "DEATHCORE",
+  "title": "Beyond Forgiveness",
+  "artist": "zen Original-Sequence Made by Zen",
+
+  "md5": "6349a01601fa4bd3aebe5d9898f6782f",
+  "sha256": "a765191f72591cef47ed80348da06faeae9e828e90a846415130bed493dd9e4e",
+
+  "bpm": [130, 260],
+  "notes": 1547,
+  "total": 399,
+  "length": 120.23,
+  "judge": "easy"
+}

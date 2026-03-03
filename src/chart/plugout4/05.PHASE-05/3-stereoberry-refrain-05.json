@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-05" },
+
+  "songId": "3-stereoberry-refrain",
+  "player": "single",
+  "level": 3,
+  "genre": "DREAM POP",
+  "title": "リフレイン",
+  "artist": "stereoberry",
+
+  "md5": "bf8e0f738b2bb5e17bdc59626b658752",
+  "sha256": "3c56b0d3bb078dea41936bf5b78fb0036eaba31e3e8110c09725bccdb27feb84",
+
+  "bpm": [84, 168],
+  "notes": 257,
+  "length": 92.31,
+  "judge": "easy"
+}

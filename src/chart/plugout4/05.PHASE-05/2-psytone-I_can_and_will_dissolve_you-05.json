@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-05" },
+
+  "songId": "2-psytone-I_can_and_will_dissolve_you",
+  "player": "single",
+  "level": 2,
+  "genre": "DUB",
+  "title": "I can and will dissolve you",
+  "artist": "psytone",
+
+  "md5": "0ead6014b4828194090af303d6b3464b",
+  "sha256": "b0b6fef7658d5a0946105ae25cbb9596c23e30407e08326efbc57d7232915c5b",
+
+  "bpm": 65,
+  "notes": 168,
+  "total": 220,
+  "length": 92.31,
+  "judge": "easy"
+}

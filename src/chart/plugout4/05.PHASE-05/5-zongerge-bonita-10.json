@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-05" },
+
+  "songId": "5-zongerge-bonita",
+  "player": "double",
+  "level": 5,
+  "genre": "HOUSE",
+  "title": "bonita",
+  "artist": "zonguergue",
+
+  "md5": "5731825b5e4ce96a7479e36d6b953c6f",
+  "sha256": "6f4de079c1fda76ce2c515e574f9ca2b7fa4886553b441d7f30e82832bafa574",
+
+  "bpm": 122,
+  "notes": 521,
+  "total": 313,
+  "length": 114.1,
+  "judge": "normal"
+}

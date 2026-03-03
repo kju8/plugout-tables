@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-05" },
+
+  "songId": "7-nixx_ihika",
+  "player": "single",
+  "level": 7,
+  "genre": "HARD TECHNO",
+  "title": "Ihika",
+  "artist": "nixx",
+
+  "md5": "5d2582e6727be98a0acff522aceb6359",
+  "sha256": "3e94b2294b6bdc2bcfa9a716eea534953d571f5efea201a1c288765d66e242eb",
+
+  "bpm": 145,
+  "notes": 694,
+  "total": 235,
+  "length": 107.59,
+  "judge": "hard"
+}

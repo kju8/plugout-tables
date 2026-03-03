@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-05" },
+
+  "songId": "6-Neg-Blind",
+  "player": "double",
+  "level": 6,
+  "genre": "2step",
+  "title": "Blind",
+  "artist": "Neg",
+
+  "md5": "03304612c7bd0f45e2fb5f0416d5942f",
+  "sha256": "fe9f0c5981f07d2f8fd594a792457984bdff940d5630f844ee293c78ba9617a2",
+
+  "bpm": 130,
+  "notes": 363,
+  "total": 150,
+  "length": 92.31,
+  "judge": "easy"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-05" },
+
+  "songId": "8-Bts_Factory_make_noise",
+  "player": "double",
+  "level": 11,
+  "genre": "INDUSTRIAL BREAK BEATS",
+  "title": "Make More Noise!",
+  "artist": "Bts-Factory (Remixed by Bts-Factory)",
+
+  "md5": "b4ade1269ea3269870e8d646a53314f1",
+  "sha256": "e4b047aa5e95b428edae5700fb3b48a1f3105379ca60f074c9490baa8a52650e",
+
+  "bpm": [150, 600],
+  "notes": 951,
+  "total": 331,
+  "length": 95.0,
+  "judge": "normal"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-05" },
+
+  "songId": "8-Bts_Factory_make_noise",
+  "player": "double",
+  "level": 8,
+  "genre": "BRIT HOUSE",
+  "title": "Make Noise!",
+  "artist": "Bts-Factory",
+
+  "md5": "4d482df9ada186073af2ece838e39d42",
+  "sha256": "e8bc7319d8f2829e1f2821c74ce889dd33d250ea0ee13042f3a0eb5a5eda60cd",
+
+  "bpm": 150,
+  "notes": 653,
+  "total": 331,
+  "length": 95.0,
+  "judge": "normal"
+}

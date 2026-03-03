@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "PHASE-05" },
+
+  "songId": "4-arua-garland",
+  "player": "double",
+  "level": 4,
+  "genre": "MINIMAL/CLICK",
+  "title": "garland",
+  "artist": "arua",
+
+  "md5": "b2884c51f4bc150804e42d4615d6db19",
+  "sha256": "ae4589c24305e95b596749992fcd4d53cc3569df01b164b2fc9bcb60b6d733b4",
+
+  "bpm": 130,
+  "notes": 532,
+  "total": 270,
+  "length": 90.46,
+  "judge": "normal"
+}
