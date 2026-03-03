@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "FINAL-PHASE 第一弾" },
+
+  "songId": "6-paraoka-summerghost",
+  "player": "single",
+  "level": 6,
+  "genre": "ELECTRO",
+  "title": "summerghost",
+  "artist": "paraoka",
+
+  "md5": "9863949010d182c5eeb8c719799c3822",
+  "sha256": "9401504bfdfa0cbb603559d7afdc96c5defbf21a1a6a9850493744ba92f2c581",
+
+  "bpm": 141,
+  "notes": 533,
+  "total": 236,
+  "length": 100.9,
+  "judge": "hard"
+}

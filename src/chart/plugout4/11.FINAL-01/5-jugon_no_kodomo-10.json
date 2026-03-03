@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "FINAL-PHASE 第一弾" },
+
+  "songId": "5-jugon_no_kodomo",
+  "player": "double",
+  "level": 5,
+  "genre": "CLASSIC CHILLOUT",
+  "title": "海獣の子供",
+  "artist": "愛新覚羅溥儀",
+
+  "md5": "5cc0dc879e0c6636e996aba3429f5c74",
+  "sha256": "f4161a68e1c7930a47b4d7e7d102b68705860b3b87e33253080e8acdd0a68089",
+
+  "bpm": 108,
+  "notes": 289,
+  "total": 346,
+  "length": 93.06,
+  "judge": "hard"
+}

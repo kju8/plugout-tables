@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "FINAL-PHASE 第一弾" },
+
+  "songId": "4-tigerlily-plugout",
+  "player": "single",
+  "level": 4,
+  "genre": "FIDGET HOUSE",
+  "title": "PLUGOUT",
+  "artist": "tigerlily",
+
+  "md5": "d02d58f9ebca0c8b6ba1c6042b23d431",
+  "sha256": "7cda51875bd78017e50ad3d94b8554fed1412849eadae1040d7702c90efcf837",
+
+  "bpm": 134,
+  "notes": 343,
+  "total": 229,
+  "length": 91.23,
+  "judge": "normal"
+}

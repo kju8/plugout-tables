@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "FINAL-PHASE 第一弾" },
+
+  "songId": "1_from_mind_liberation_front_-_yoru_kara_yoru",
+  "player": "single",
+  "level": 1,
+  "genre": "MONOLOGUE",
+  "title": "夜から夜",
+  "artist": "(マインド・リベレーション・フロント盗聴放送より)",
+
+  "md5": "2ba45b369295e0043a6d3c4fc797992d",
+  "sha256": "ec27f1bb57d67da033ee7736bde5f4770bae03229226726b21f5888925101131",
+
+  "bpm": 82,
+  "notes": 65,
+  "total": 250,
+  "length": 140.49,
+  "judge": "easy"
+}

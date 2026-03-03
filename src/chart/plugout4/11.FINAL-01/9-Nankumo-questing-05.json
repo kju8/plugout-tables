@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "FINAL-PHASE 第一弾" },
+
+  "songId": "9-Nankumo-questing",
+  "player": "single",
+  "level": 9,
+  "genre": "TECHNO",
+  "title": "QUESTING",
+  "artist": "Nankumo",
+
+  "md5": "a060b320ece7f80c8daa5295bdc92212",
+  "sha256": "414a1467b8ee765e3ea5f73817e8318c1b8707f40b974fb27ae52a8bd04c62b7",
+
+  "bpm": 153,
+  "notes": 810,
+  "total": 190,
+  "length": 101.76,
+  "judge": "normal"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "FINAL-PHASE 第一弾" },
+
+  "songId": "6-roop-tripletrouble",
+  "player": "single",
+  "level": 6,
+  "genre": "FUNKY GARAGE",
+  "title": "Triple Trouble (roop remix)",
+  "artist": "roop & murotani loves Beastie Boys",
+
+  "md5": "687a374903562612f3ef364f44ebba73",
+  "sha256": "595dc138e440479bc9bdd40645c7016fcce3dd003322d033d5e2b5e88d020ab7",
+
+  "bpm": 120,
+  "notes": 600,
+  "total": 210,
+  "length": 120.0,
+  "judge": "normal"
+}

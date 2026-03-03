@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "FINAL-PHASE 第一弾" },
+
+  "songId": "1-haganai-life_is_too_short",
+  "player": "double",
+  "level": 1,
+  "genre": "DRONE DOOM",
+  "title": "Life Is Too Short",
+  "artist": "Haganai",
+
+  "md5": "be2b1b173ad793e41d4ef46b7031ec26",
+  "sha256": "5feb06a062d97fb3ea175d9003bc8c9dc690678976afeb76ffc0d95f46820a7c",
+
+  "bpm": 79,
+  "notes": 26,
+  "total": 99,
+  "length": 164.05,
+  "judge": "hard"
+}

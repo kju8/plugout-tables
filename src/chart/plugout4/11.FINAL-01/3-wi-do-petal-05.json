@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "FINAL-PHASE 第一弾" },
+
+  "songId": "3-wi-do-petal",
+  "player": "single",
+  "level": 3,
+  "genre": "MINIMALMUSIC",
+  "title": "Petal",
+  "artist": "wi-do",
+
+  "md5": "2c4e81fa4286220eafce582f6052c91a",
+  "sha256": "cbdb14a721768fb7ba114075d90c25e33606b55945886f8ee6c76d06a036d7e3",
+
+  "bpm": 110,
+  "notes": 263,
+  "total": 333,
+  "length": 111.27,
+  "judge": "easy"
+}

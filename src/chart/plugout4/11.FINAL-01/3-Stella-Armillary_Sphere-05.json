@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "FINAL-PHASE 第一弾" },
+
+  "songId": "3-Stella-Armillary_Sphere",
+  "player": "single",
+  "level": 3,
+  "genre": "PROGRESSIVE HOUSE",
+  "title": "Armillary Sphere",
+  "artist": "Stella",
+
+  "md5": "b60c99ad2336e80a7bb2cdd68f18a543",
+  "sha256": "64794df3c04977ad110b2b5f44725e6749b3b583ff4c608ffa280b783cf75243",
+
+  "bpm": 127,
+  "notes": 366,
+  "total": 133,
+  "length": 137.95,
+  "judge": "easy"
+}

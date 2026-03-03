@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "FINAL-PHASE 第一弾" },
+
+  "songId": "2-cubesato+sweez+hsgn-le_petit_prince",
+  "player": "single",
+  "level": 2,
+  "genre": "FOLKTRONICA",
+  "title": "Le Petit Prince (from Adansonia)",
+  "artist": "cubesato+sweez+hsgn",
+
+  "md5": "d1d3a866a7bfcebf3f0858fccf5733a3",
+  "sha256": "c36add1956cb7eabe1fa4a8c665861ee902d000991c80c5ebbad6b02874116af",
+
+  "bpm": 100,
+  "notes": 144,
+  "total": 284,
+  "length": 99.0,
+  "judge": "normal"
+}

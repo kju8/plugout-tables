@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "FINAL-PHASE 第一弾" },
+
+  "songId": "7-kaoru-spacetv",
+  "player": "single",
+  "level": 7,
+  "genre": "ELECTRO FUTURE",
+  "title": "宇宙テレビ",
+  "artist": "Ｋａｏｒｕ feat. ゆきね",
+
+  "md5": "9a5f34912b9924d6eea0cd5cfa6878c6",
+  "sha256": "889ce73dc282d460c34032498a660bea0e7989d085b3a07c657d91780a50b6fb",
+
+  "bpm": 135,
+  "notes": 648,
+  "total": 221,
+  "length": 163.56,
+  "judge": "normal"
+}
