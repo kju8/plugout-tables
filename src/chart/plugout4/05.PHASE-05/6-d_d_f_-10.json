@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": {
+    "series": "plugout4",
+    "phase": "PHASE-05"
+  },
+
+  "songId": "6-d_d_f_",
+  "player": "double",
+  "level": 6,
+  "genre": "MINIMAL HOUSE",
+  "title": "本格的　ガチムチクラブミュージック　ミニマルハウス編",
+  "artist": "BONN",
+
+  "md5": "a985f2477041b922019027efe8bf9346",
+  "sha256": "ca9530102a51c900c98d3632da790ad94d33509d6c82dfaad33e07402d91dd59",
+
+  "bpm": 121,
+  "notes": 944,
+  "total": 421,
+  "length": 120.99,
+  "judge": "normal"
+}
