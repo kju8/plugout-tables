@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "FINAL-PHASE 第三弾" },
+
+  "songId": "4-INTRON-gene",
+  "player": "single",
+  "level": 4,
+  "genre": "PROGRESSIVE TECHNO",
+  "title": "gene",
+  "artist": "INTRON",
+
+  "md5": "8066df29ee4992b3fa972dbe2785e695",
+  "sha256": "69b2a1beb594e9fe8f346c6472454903819b12a3e77d925b9e26589c3034b888",
+
+  "bpm": 128,
+  "notes": 381,
+  "total": 206,
+  "length": 136.88,
+  "judge": "easy"
+}

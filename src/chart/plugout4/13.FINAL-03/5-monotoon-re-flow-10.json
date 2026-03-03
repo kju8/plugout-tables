@@ -1,8 +1,8 @@
 {
   "$schema": "../../../../.astro/collections/charts.schema.json",
-  "package": { "series": "plugout4", "phase": "FINAL-PHASE 第二弾" },
+  "package": { "series": "plugout4", "phase": "FINAL-PHASE 第三弾" },
 
-  "songId": "5-monotoon-flow",
+  "songId": "5-monotoon-re-flow",
   "player": "double",
   "level": 5,
   "genre": "UNDERGROUND J-POP",

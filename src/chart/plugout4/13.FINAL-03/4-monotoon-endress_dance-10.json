@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "FINAL-PHASE 第三弾" },
+
+  "songId": "4-monotoon-endress_dance",
+  "player": "double",
+  "level": 4,
+  "genre": "POSTROCK",
+  "title": "endless dance",
+  "artist": "monotoon",
+
+  "md5": "63cfac1c6d24de6de088b9dc16ccf123",
+  "sha256": "83679c6e02ad01cdc9dfb2788566f111fd44d297607f9d375e604918e42ef74f",
+
+  "bpm": 124,
+  "notes": 528,
+  "total": 266,
+  "length": 160.65,
+  "judge": "normal"
+}
