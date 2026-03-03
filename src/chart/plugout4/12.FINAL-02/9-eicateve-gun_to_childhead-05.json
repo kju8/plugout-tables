@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "FINAL-PHASE 第二弾" },
+
+  "songId": "9-eicateve-gun_to_childhead",
+  "player": "single",
+  "level": 9,
+  "genre": "HARDCORE",
+  "title": "Gun to Childhead",
+  "artist": "eicateve",
+
+  "md5": "97a5d279a5a1883dddd2654b0323e3e2",
+  "sha256": "d486a1d32b18e79d532c32a0308ec72122d920c6091156f6480a04c8b437a118",
+
+  "bpm": 125,
+  "notes": 777,
+  "total": 260,
+  "length": 145.86,
+  "judge": "easy"
+}

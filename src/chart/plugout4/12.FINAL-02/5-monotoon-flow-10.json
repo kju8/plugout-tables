@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "FINAL-PHASE 第二弾" },
+
+  "songId": "5-monotoon-flow",
+  "player": "double",
+  "level": 5,
+  "genre": "UNDERGROUND J-POP",
+  "title": "re-flow",
+  "artist": "monotoon",
+
+  "md5": "fd7c66b74aa1fc161cc211e8ad3dfbd1",
+  "sha256": "a85760c9c2b55ece04f07c6d9f2ba2925a644a3a9737c5f0f39e6da83b8f9176",
+
+  "bpm": 114,
+  "notes": 335,
+  "total": 224,
+  "length": 138.95,
+  "judge": "normal"
+}

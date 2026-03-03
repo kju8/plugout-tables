@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout4", "phase": "FINAL-PHASE 第二弾" },
+
+  "songId": "8-Kate_Lesing_remixed_by_LU-out_of_your_love",
+  "player": "double",
+  "level": 8,
+  "genre": "ELECTROSTEP",
+  "title": "out of your love (remix)",
+  "artist": "Kate Lesing remixed by LU",
+
+  "md5": "160a9b43722c42bb1ab62e1e05a9fad3",
+  "sha256": "6993cc2b5e1ca8b1fbc1b21eab96e0d69e226a93f5b221cfc91643d5bd28212e",
+
+  "bpm": 186,
+  "notes": 998,
+  "total": 333,
+  "length": 105.0,
+  "judge": "normal"
+}
