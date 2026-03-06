@@ -18,7 +18,16 @@ const iidxTotal = (notes: number) =>
     <div class="package" data-sort-mode="package"></div>
     <div class="ir">IR</div>
     <div class="chart">CHART</div>
-    <div class="player"></div>
+    <div class="player">
+      <div>
+        <input type="checkbox" id="single" checked />
+        <label for="single">SP</label>
+      </div>
+      <div>
+        <input type="checkbox" id="double" checked />
+        <label for="double">DP</label>
+      </div>
+    </div>
     <div class="level" data-sort-mode="level">LEVEL</div>
     <div class="genre" data-sort-mode="genre">GENRE</div>
     <div class="title" data-sort-mode="title">TITLE</div>
@@ -51,7 +60,7 @@ const iidxTotal = (notes: number) =>
           )}
         <div
           class="line"
-          data-sort-player={v.data.player}
+          data-filter-player={v.data.player}
           data-sort-level={v.data.level}
           data-sort-genre={v.data.genre}
           data-sort-title={v.data.title}
@@ -223,8 +232,8 @@ const iidxTotal = (notes: number) =>
           lines
             .sort((a, b) =>
               sorter(
-                a.getAttribute("data-sort-genre") ?? "",
-                b.getAttribute("data-sort-genre") ?? "",
+                a.getAttribute("data-sort-genre")?.toUpperCase() ?? "",
+                b.getAttribute("data-sort-genre")?.toUpperCase() ?? "",
               ),
             )
             .forEach((e, i) => {
@@ -516,6 +525,26 @@ const iidxTotal = (notes: number) =>
       }
     });
   });
+
+  const filterFlag = {
+    single: true,
+    double: true,
+  };
+  const filter = (player: "single" | "double") => {
+    filterFlag[player] = !filterFlag[player];
+    document
+      .querySelectorAll<HTMLElement>(`div[data-filter-player="${player}"]`)
+      .forEach((v) => {
+        v.style.display = filterFlag[player] ? "" : "none";
+      });
+  };
+
+  document
+    .querySelector("#single")
+    ?.addEventListener("click", (e) => filter("single"));
+  document
+    .querySelector("#double")
+    ?.addEventListener("click", (e) => filter("double"));
 </script>
 
 <style is:global>
@@ -539,7 +568,8 @@ const iidxTotal = (notes: number) =>
       min-content max-content max-content min-content min-content min-content min-content;
   }
 
-  #chart_table div:not(.line) {
+  #chart_table > div:not(.line),
+  #chart_table > .line > div {
     @apply border-b border-r border-mist-800/40;
 
     position: relative;
@@ -704,9 +734,9 @@ const iidxTotal = (notes: number) =>
     font-weight: bold;
   }
 
-  div.genre,
-  div.title,
-  div.artist {
+  div:not(#header) > div.genre,
+  div:not(#header) > div.title,
+  div:not(#header) > div.artist {
     font-family: "M PLUS 1p", sans-serif;
   }
 
@@ -738,5 +768,15 @@ const iidxTotal = (notes: number) =>
 
   div:hover > .tooltip {
     display: block;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  input[type="checkbox"]:not(:checked) + label {
+    text-decoration: line-through;
+    font-weight: bold;
+    opacity: 40%;
   }
 </style>
