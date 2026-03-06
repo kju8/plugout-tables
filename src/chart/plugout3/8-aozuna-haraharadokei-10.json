@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout3" },
+
+  "songId": "8-aozuna-haraharadokei",
+  "player": "double",
+  "level": 8,
+  "genre": "Gabba",
+  "title": "腹腹時計",
+  "artist": "Aozuna",
+
+  "md5": "208f7c64e9d2655d8222106450b76b36",
+  "sha256": "7f98d4638f7392a9bcdbf666d4ef822645690eb56de8388a30d44b65cd96da5d",
+
+  "bpm": 216,
+  "notes": 1135,
+  "length": 103.33,
+  "judge": "easy"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout3" },
+
+  "songId": "3_brother_sou_gale",
+  "player": "single",
+  "level": 3,
+  "genre": "DnB",
+  "title": "gale",
+  "artist": "Brother Sou",
+
+  "md5": "fd904319a9b845cbd7828efc5e5e5cad",
+  "sha256": "415f6a912407b0ed54cd2bfc44d422607797e7315f6a035b7ff98723a918f162",
+
+  "bpm": 180,
+  "notes": 273,
+  "total": 170,
+  "length": 86.58,
+  "judge": "normal"
+}

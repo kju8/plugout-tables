@@ -442,7 +442,7 @@ const iidxTotal = (notes: number) =>
           lines
             .sort(
               (a, b) =>
-                (sortReverse ? -1 : 1) *
+                (sortReverse ? 1 : -1) *
                 (Number(a.getAttribute("data-sort-total")) -
                   Number(b.getAttribute("data-sort-total"))),
             )
@@ -489,7 +489,7 @@ const iidxTotal = (notes: number) =>
           lines
             .sort(
               (a, b) =>
-                (sortReverse ? -1 : 1) *
+                (sortReverse ? 1 : -1) *
                 (Number(a.getAttribute("data-sort-total")) /
                   Number(a.getAttribute("data-sort-notes")) -
                   Number(b.getAttribute("data-sort-total")) /
@@ -720,8 +720,8 @@ const iidxTotal = (notes: number) =>
       in srgb,
       color-mix(
         in hsl,
-        var(--color-green-400),
-        var(--color-yellow-500) min(calc(100% * var(--total) / 666), 100%)
+        var(--color-red-600),
+        var(--color-green-500) min(calc(100% * var(--total) / 666), 100%)
       ),
       transparent 75%
     );

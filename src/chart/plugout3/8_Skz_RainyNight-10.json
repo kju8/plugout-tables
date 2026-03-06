@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout3" },
+
+  "songId": "8_Skz_RainyNight",
+  "player": "double",
+  "level": 8,
+  "genre": "Liquid Funk",
+  "title": "Rainy Night",
+  "artist": "SKz",
+
+  "md5": "a14ea0a66acc5c3f493177a190a190e2",
+  "sha256": "8ef411a4e0b5e07da0dad5210e58a8769a3ae8cdcc73943844837d3af69bbeb6",
+
+  "bpm": [90, 180],
+  "notes": 783,
+  "total": 526,
+  "length": 101.17,
+  "judge": "normal"
+}

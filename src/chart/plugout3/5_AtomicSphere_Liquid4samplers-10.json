@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout3" },
+
+  "songId": "5_AtomicSphere_Liquid4samplers",
+  "player": "double",
+  "level": 5,
+  "genre": "Liquid Funk",
+  "title": "Liquid 4 Samplers",
+  "artist": "Atomic Sphere with Fivekeys Masters",
+
+  "md5": "f07dc8432e872adfa51236bf5983659c",
+  "sha256": "5f707ca58f2387a0d3a9edd32d4e26be1ddb8d58be1c0086229f76524781ee7d",
+
+  "bpm": 180,
+  "notes": 398,
+  "total": 412,
+  "length": 88.58,
+  "judge": "hard"
+}

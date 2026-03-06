@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout3" },
+
+  "songId": "3_ko_mountain_hyper_diver",
+  "player": "double",
+  "level": 3,
+  "genre": "Nu Jungle",
+  "title": "Hyper Diver",
+  "artist": "King of the Mountain",
+
+  "md5": "1c6ef7c0666e17381f6969588cd27159",
+  "sha256": "b4fb7417e439f5bec854095d966b3711537d7528fe960eb026bf2ff3047bf3b2",
+
+  "bpm": 180,
+  "notes": 431,
+  "total": 421,
+  "length": 89.67,
+  "judge": "easy"
+}

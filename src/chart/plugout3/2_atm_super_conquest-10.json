@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout3" },
+
+  "songId": "2_atm_super_conquest",
+  "player": "double",
+  "level": 2,
+  "genre": "NEURO FUNK",
+  "title": "Super Conquest",
+  "artist": "Atomic Sphere",
+
+  "md5": "105be28250ddb3c06ea76058c88f2dee",
+  "sha256": "948608f134fe7aaa32f02a8428037b46479b81974866f5ea9f723482891afbbc",
+
+  "bpm": 190,
+  "notes": 367,
+  "total": 366,
+  "length": 86.84,
+  "judge": "easy"
+}

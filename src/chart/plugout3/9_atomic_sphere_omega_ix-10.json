@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout3" },
+
+  "songId": "9_atomic_sphere_omega_ix",
+  "player": "double",
+  "level": 9,
+  "genre": "NEURO FUNK",
+  "title": "OMEGA IX",
+  "artist": "atomic sphere",
+
+  "md5": "bea81572ddf407016cf1becfd892fe59",
+  "sha256": "fd9dc1916bd56a9727f8205557e794524eefa18f0d77d9ed112143814c54473f",
+
+  "bpm": 190,
+  "notes": 877,
+  "total": 285,
+  "length": 98.45,
+  "judge": "normal"
+}

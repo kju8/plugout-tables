@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout3" },
+
+  "songId": "4_AtomicSphere_ActiveWind",
+  "player": "single",
+  "level": 4,
+  "genre": "Drum'n'Bass",
+  "title": "Active Wind",
+  "artist": "Atomic Sphere",
+
+  "md5": "76d61e2396ed33a037c13e993693e322",
+  "sha256": "453e08f5f9453094e88ff01ff65c16e461a240ba5dce477cf91e5f999f97cf7d",
+
+  "bpm": 180,
+  "notes": 218,
+  "total": 161,
+  "length": 100.0,
+  "judge": "normal"
+}

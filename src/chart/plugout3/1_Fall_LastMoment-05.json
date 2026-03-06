@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout3" },
+
+  "songId": "1_Fall_LastMoment",
+  "player": "single",
+  "level": 1,
+  "genre": "Techno Pop",
+  "title": "last moment",
+  "artist": "FALL",
+
+  "md5": "3956b97370e5342f607e57fa0e849eae",
+  "sha256": "51ccceddbddda31d348e673b03f31a6762cfadcdd2f467857327083df664d158",
+
+  "bpm": 180,
+  "notes": 54,
+  "total": 210,
+  "length": 95.92,
+  "judge": "easy"
+}

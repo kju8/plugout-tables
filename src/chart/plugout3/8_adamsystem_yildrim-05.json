@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout3" },
+
+  "songId": "8_adamsystem_yildrim",
+  "player": "single",
+  "level": 8,
+  "genre": "SPEED FUNK",
+  "title": "YILDRIM",
+  "artist": "ADAM SYSTEM",
+
+  "md5": "79f330abb90770d0fa296ed0e80e5b96",
+  "sha256": "f0aa525d60e9dbb3d30bd879e6d8451a3f09244c4190c3262ee72c32ec2be6d9",
+
+  "bpm": 200,
+  "notes": 595,
+  "total": 382,
+  "length": 87.6,
+  "judge": "easy"
+}

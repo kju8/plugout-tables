@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout3" },
+
+  "songId": "4_lu_mastectomy",
+  "player": "single",
+  "level": 4,
+  "genre": "JUMP UP",
+  "title": "mastectomy",
+  "artist": "LU",
+
+  "md5": "899104389320ec99670f8a217379b95a",
+  "sha256": "173bd5504dfd8d1e6aa3fa588dd162e23bd3efb772132a68f9cbeb84af80c011",
+
+  "bpm": 185,
+  "notes": 314,
+  "total": 317,
+  "length": 95.92,
+  "judge": "normal"
+}

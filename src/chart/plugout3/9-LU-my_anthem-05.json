@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout3" },
+
+  "songId": "9-LU-my_anthem",
+  "player": "single",
+  "level": 9,
+  "genre": "DRUM'N'BASS",
+  "title": "My ANTHEM",
+  "artist": "LU",
+
+  "md5": "2d92ddfd9cf1802ea0c1ed10692d60cb",
+  "sha256": "fe2da293cc407e2d92c797db769460ebecab47bb0b90934513f7ddb79633659f",
+
+  "bpm": 190,
+  "notes": 901,
+  "total": 255,
+  "length": 93.39,
+  "judge": "normal"
+}

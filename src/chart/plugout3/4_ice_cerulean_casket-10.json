@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout3" },
+
+  "songId": "4_ice_cerulean_casket",
+  "player": "double",
+  "level": 7,
+  "genre": "Jazz Step",
+  "title": "cerulean casket",
+  "artist": "ice",
+
+  "md5": "62b473e4601f380bb5e96b2bcfcd9c3e",
+  "sha256": "290fc45db499610d995957a3ef11b2af34bfb3a361bb11b62b0a1138fa438d23",
+
+  "bpm": [52, 210],
+  "notes": 514,
+  "total": 518,
+  "length": 100.74,
+  "judge": "normal"
+}

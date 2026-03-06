@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout3" },
+
+  "songId": "6_AtomicSphere_Amaranth",
+  "player": "single",
+  "level": 6,
+  "genre": "Drum'n'Bass",
+  "title": "Amaranth",
+  "artist": "Atomic Sphere",
+
+  "md5": "f9d724491deee13a3490f8f2f6365e4a",
+  "sha256": "2ab0d476a4ef96ebe3b14c8541b6ee6d5218610f90bfbdbd82904ae451297272",
+
+  "bpm": 186,
+  "notes": 537,
+  "total": 280,
+  "length": 105.0,
+  "judge": "easy"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout3" },
+
+  "songId": "7_atomic_sphere_alpha_device",
+  "player": "single",
+  "level": 7,
+  "genre": "Liquid Funk",
+  "title": "Alpha device",
+  "artist": "A.T.M.",
+
+  "md5": "8214ed32c77fe83500ee90f675692940",
+  "sha256": "a2eceb8a91451947bbfe1bd9f1b9a09eb4000939a870690e1d61bc89ed6f2e1e",
+
+  "bpm": 185,
+  "notes": 455,
+  "total": 313,
+  "length": 105.08,
+  "judge": "easy"
+}
