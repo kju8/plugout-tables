@@ -172,6 +172,8 @@ const iidxTotal = (notes: number) =>
     ...document.querySelectorAll<HTMLElement>("div.line:not(#header)"),
   ];
   const sorter = new Intl.Collator().compare;
+  let sortMode = "package";
+  let sortReverse = false;
 
   headers.forEach((head) => {
     head.addEventListener("click", () => {
@@ -184,7 +186,11 @@ const iidxTotal = (notes: number) =>
         e.style.display = "none";
       }
 
-      const sortMode = head.getAttribute("data-sort-mode");
+      if (head.getAttribute("data-sort-mode") == sortMode)
+        sortReverse = !sortReverse;
+      else sortReverse = false;
+
+      sortMode = head.getAttribute("data-sort-mode") ?? "package";
       switch (sortMode) {
         case "package":
           for (const e of document.querySelectorAll<HTMLElement>(
@@ -200,8 +206,9 @@ const iidxTotal = (notes: number) =>
           lines
             .sort(
               (a, b) =>
-                Number(a.getAttribute("data-sort-level")) -
-                Number(b.getAttribute("data-sort-level")),
+                (sortReverse ? -1 : 1) *
+                (Number(a.getAttribute("data-sort-level")) -
+                  Number(b.getAttribute("data-sort-level"))),
             )
             .forEach((e, i, arr) => {
               if (
@@ -230,11 +237,13 @@ const iidxTotal = (notes: number) =>
           break;
         case "genre":
           lines
-            .sort((a, b) =>
-              sorter(
-                a.getAttribute("data-sort-genre")?.toUpperCase() ?? "",
-                b.getAttribute("data-sort-genre")?.toUpperCase() ?? "",
-              ),
+            .sort(
+              (a, b) =>
+                (sortReverse ? -1 : 1) *
+                sorter(
+                  a.getAttribute("data-sort-genre")?.toUpperCase() ?? "",
+                  b.getAttribute("data-sort-genre")?.toUpperCase() ?? "",
+                ),
             )
             .forEach((e, i) => {
               e.style.gridRow = `${i + 2}`;
@@ -242,11 +251,13 @@ const iidxTotal = (notes: number) =>
           break;
         case "title":
           lines
-            .sort((a, b) =>
-              sorter(
-                a.getAttribute("data-sort-title") ?? "",
-                b.getAttribute("data-sort-title") ?? "",
-              ),
+            .sort(
+              (a, b) =>
+                (sortReverse ? -1 : 1) *
+                sorter(
+                  a.getAttribute("data-sort-title") ?? "",
+                  b.getAttribute("data-sort-title") ?? "",
+                ),
             )
             .forEach((e, i) => {
               e.style.gridRow = `${i + 2}`;
@@ -254,11 +265,13 @@ const iidxTotal = (notes: number) =>
           break;
         case "artist":
           lines
-            .sort((a, b) =>
-              sorter(
-                a.getAttribute("data-sort-artist") ?? "",
-                b.getAttribute("data-sort-artist") ?? "",
-              ),
+            .sort(
+              (a, b) =>
+                (sortReverse ? -1 : 1) *
+                sorter(
+                  a.getAttribute("data-sort-artist") ?? "",
+                  b.getAttribute("data-sort-artist") ?? "",
+                ),
             )
             .forEach((e, i) => {
               e.style.gridRow = `${i + 2}`;
@@ -268,10 +281,13 @@ const iidxTotal = (notes: number) =>
           lines
             .sort(
               (a, b) =>
-                judges.findIndex(
+                (sortReverse ? -1 : 1) *
+                (judges.findIndex(
                   (v) => v == a.getAttribute("data-sort-judge"),
                 ) -
-                judges.findIndex((v) => v == b.getAttribute("data-sort-judge")),
+                  judges.findIndex(
+                    (v) => v == b.getAttribute("data-sort-judge"),
+                  )),
             )
             .forEach((e, i, arr) => {
               if (
@@ -302,8 +318,9 @@ const iidxTotal = (notes: number) =>
           lines
             .sort(
               (a, b) =>
-                Number(a.getAttribute("data-sort-bpm")) -
-                Number(b.getAttribute("data-sort-bpm")),
+                (sortReverse ? -1 : 1) *
+                (Number(a.getAttribute("data-sort-bpm")) -
+                  Number(b.getAttribute("data-sort-bpm"))),
             )
             .forEach((e, i) => {
               e.style.gridRow = `${i + 2}`;
@@ -324,8 +341,9 @@ const iidxTotal = (notes: number) =>
           lines
             .sort(
               (a, b) =>
-                Number(a.getAttribute("data-sort-notes")) -
-                Number(b.getAttribute("data-sort-notes")),
+                (sortReverse ? -1 : 1) *
+                (Number(a.getAttribute("data-sort-notes")) -
+                  Number(b.getAttribute("data-sort-notes"))),
             )
             .forEach((e, i, arr) => {
               if (
@@ -372,10 +390,11 @@ const iidxTotal = (notes: number) =>
           lines
             .sort(
               (a, b) =>
-                Number(a.getAttribute("data-sort-notes")) /
+                (sortReverse ? -1 : 1) *
+                (Number(a.getAttribute("data-sort-notes")) /
                   Number(a.getAttribute("data-sort-length")) -
-                Number(b.getAttribute("data-sort-notes")) /
-                  Number(b.getAttribute("data-sort-length")),
+                  Number(b.getAttribute("data-sort-notes")) /
+                    Number(b.getAttribute("data-sort-length"))),
             )
             .forEach((e, i, arr) => {
               if (
@@ -423,8 +442,9 @@ const iidxTotal = (notes: number) =>
           lines
             .sort(
               (a, b) =>
-                Number(a.getAttribute("data-sort-total")) -
-                Number(b.getAttribute("data-sort-total")),
+                (sortReverse ? -1 : 1) *
+                (Number(a.getAttribute("data-sort-total")) -
+                  Number(b.getAttribute("data-sort-total"))),
             )
             .forEach((e, i, arr) => {
               if (
@@ -462,10 +482,11 @@ const iidxTotal = (notes: number) =>
           lines
             .sort(
               (a, b) =>
-                Number(a.getAttribute("data-sort-total")) /
+                (sortReverse ? -1 : 1) *
+                (Number(a.getAttribute("data-sort-total")) /
                   Number(a.getAttribute("data-sort-notes")) -
-                Number(b.getAttribute("data-sort-total")) /
-                  Number(b.getAttribute("data-sort-notes")),
+                  Number(b.getAttribute("data-sort-total")) /
+                    Number(b.getAttribute("data-sort-notes"))),
             )
             .forEach((e, i, arr) => {
               if (
