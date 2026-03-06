@@ -18,7 +18,7 @@ const iidxTotal = (notes: number) =>
     <div class="package" data-sort-mode="package"></div>
     <div class="ir">IR</div>
     <div class="chart">CHART</div>
-    <div class="player" data-sort-mode="player"></div>
+    <div class="player"></div>
     <div class="level" data-sort-mode="level">LEVEL</div>
     <div class="genre" data-sort-mode="genre">GENRE</div>
     <div class="title" data-sort-mode="title">TITLE</div>
@@ -166,9 +166,15 @@ const iidxTotal = (notes: number) =>
 
   headers.forEach((head) => {
     head.addEventListener("click", () => {
+      for (const e of document.querySelectorAll<HTMLElement>(
+        ".mark:not(.package-mark)",
+      )) {
+        document.getElementById("chart_table")?.removeChild(e);
+      }
       for (const e of document.querySelectorAll<HTMLElement>(".package-mark")) {
         e.style.display = "none";
       }
+
       const sortMode = head.getAttribute("data-sort-mode");
       switch (sortMode) {
         case "package":
@@ -188,8 +194,29 @@ const iidxTotal = (notes: number) =>
                 Number(a.getAttribute("data-sort-level")) -
                 Number(b.getAttribute("data-sort-level")),
             )
-            .forEach((e, i) => {
-              e.style.gridRow = `${i + 2}`;
+            .forEach((e, i, arr) => {
+              if (
+                i == 0 ||
+                arr[i - 1].getAttribute("data-sort-level") !==
+                  e.getAttribute("data-sort-level")
+              ) {
+                const mark = document.createElement("div");
+                mark.classList.add("mark");
+                mark.classList.add("level-mark");
+                mark.appendChild(
+                  document.createTextNode(
+                    `☆${e.getAttribute("data-sort-level")}`,
+                  ),
+                );
+                mark.style.gridRow = `${2 * i + 2}`;
+                mark.setAttribute(
+                  "data-level",
+                  `${e.getAttribute("data-sort-level")}`,
+                );
+                document.getElementById("chart_table")?.appendChild(mark);
+              }
+
+              e.style.gridRow = `${2 * i + 3}`;
             });
           break;
         case "genre":
@@ -237,8 +264,29 @@ const iidxTotal = (notes: number) =>
                 ) -
                 judges.findIndex((v) => v == b.getAttribute("data-sort-judge")),
             )
-            .forEach((e, i) => {
-              e.style.gridRow = `${i + 2}`;
+            .forEach((e, i, arr) => {
+              if (
+                i == 0 ||
+                arr[i - 1].getAttribute("data-sort-judge") !==
+                  e.getAttribute("data-sort-judge")
+              ) {
+                const mark = document.createElement("div");
+                mark.classList.add("mark");
+                mark.classList.add("judge-mark");
+                mark.appendChild(
+                  document.createTextNode(
+                    `${(e.getAttribute("data-sort-judge") ?? "").toUpperCase()}`,
+                  ),
+                );
+                mark.style.gridRow = `${2 * i + 2}`;
+                mark.setAttribute(
+                  "data-judge",
+                  `${e.getAttribute("data-sort-judge")}`,
+                );
+                document.getElementById("chart_table")?.appendChild(mark);
+              }
+
+              e.style.gridRow = `${2 * i + 3}`;
             });
           break;
         case "bpm":
@@ -260,7 +308,7 @@ const iidxTotal = (notes: number) =>
                 Number(b.getAttribute("data-sort-length")),
             )
             .forEach((e, i) => {
-              e.style.gridRow = `${i + 2}`;
+              e.style.gridRow = `${2 * i + 2}`;
             });
           break;
         case "notes":
@@ -270,8 +318,45 @@ const iidxTotal = (notes: number) =>
                 Number(a.getAttribute("data-sort-notes")) -
                 Number(b.getAttribute("data-sort-notes")),
             )
-            .forEach((e, i) => {
-              e.style.gridRow = `${i + 2}`;
+            .forEach((e, i, arr) => {
+              if (
+                i == 0 ||
+                Math.floor(
+                  Number(arr[i - 1].getAttribute("data-sort-notes")) / 100,
+                ) !==
+                  Math.floor(Number(e.getAttribute("data-sort-notes")) / 100)
+              ) {
+                const mark = document.createElement("div");
+                mark.classList.add("mark");
+                mark.classList.add("notes-mark");
+                mark.appendChild(
+                  document.createTextNode(
+                    `${
+                      Math.floor(
+                        Number(e.getAttribute("data-sort-notes")) / 100,
+                      ) * 100
+                    }～${
+                      Math.floor(
+                        Number(e.getAttribute("data-sort-notes")) / 100,
+                      ) *
+                        100 +
+                      99
+                    }`,
+                  ),
+                );
+                mark.style.gridRow = `${2 * i + 2}`;
+                mark.setAttribute(
+                  "data-notes",
+                  `${
+                    Math.floor(
+                      Number(e.getAttribute("data-sort-notes")) / 100,
+                    ) * 100
+                  }`,
+                );
+                document.getElementById("chart_table")?.appendChild(mark);
+              }
+
+              e.style.gridRow = `${2 * i + 3}`;
             });
           break;
         case "dense":
@@ -283,8 +368,46 @@ const iidxTotal = (notes: number) =>
                 Number(b.getAttribute("data-sort-notes")) /
                   Number(b.getAttribute("data-sort-length")),
             )
-            .forEach((e, i) => {
-              e.style.gridRow = `${i + 2}`;
+            .forEach((e, i, arr) => {
+              if (
+                i == 0 ||
+                Math.floor(
+                  Number(arr[i - 1].getAttribute("data-sort-notes")) /
+                    Number(arr[i - 1].getAttribute("data-sort-length")),
+                ) !==
+                  Math.floor(
+                    Number(e.getAttribute("data-sort-notes")) /
+                      Number(e.getAttribute("data-sort-length")),
+                  )
+              ) {
+                const mark = document.createElement("div");
+                mark.classList.add("mark");
+                mark.classList.add("dense-mark");
+                mark.appendChild(
+                  document.createTextNode(
+                    `${Math.floor(
+                      Number(e.getAttribute("data-sort-notes")) /
+                        Number(e.getAttribute("data-sort-length")),
+                    ).toFixed(3)}～${
+                      Math.floor(
+                        Number(e.getAttribute("data-sort-notes")) /
+                          Number(e.getAttribute("data-sort-length")),
+                      ) + 0.999
+                    }`,
+                  ),
+                );
+                mark.style.gridRow = `${2 * i + 2}`;
+                mark.setAttribute(
+                  "data-dense",
+                  `${Math.floor(
+                    Number(e.getAttribute("data-sort-notes")) /
+                      Number(e.getAttribute("data-sort-length")),
+                  )}`,
+                );
+                document.getElementById("chart_table")?.appendChild(mark);
+              }
+
+              e.style.gridRow = `${2 * i + 3}`;
             });
           break;
         case "total":
@@ -294,8 +417,36 @@ const iidxTotal = (notes: number) =>
                 Number(a.getAttribute("data-sort-total")) -
                 Number(b.getAttribute("data-sort-total")),
             )
-            .forEach((e, i) => {
-              e.style.gridRow = `${i + 2}`;
+            .forEach((e, i, arr) => {
+              if (
+                i == 0 ||
+                Math.floor(
+                  Number(arr[i - 1].getAttribute("data-sort-total")) / 50,
+                ) !== Math.floor(Number(e.getAttribute("data-sort-total")) / 50)
+              ) {
+                const mark = document.createElement("div");
+                mark.classList.add("mark");
+                mark.classList.add("notes-mark");
+                mark.appendChild(
+                  document.createTextNode(
+                    `${(
+                      Math.floor(
+                        Number(e.getAttribute("data-sort-total")) / 50,
+                      ) * 50
+                    ).toFixed(2)}～${(
+                      Math.floor(
+                        Number(e.getAttribute("data-sort-total")) / 50,
+                      ) *
+                        50 +
+                      49.99
+                    ).toFixed(2)}`,
+                  ),
+                );
+                mark.style.gridRow = `${2 * i + 2}`;
+                document.getElementById("chart_table")?.appendChild(mark);
+              }
+
+              e.style.gridRow = `${2 * i + 3}`;
             });
           break;
         case "recover":
@@ -307,8 +458,57 @@ const iidxTotal = (notes: number) =>
                 Number(b.getAttribute("data-sort-total")) /
                   Number(b.getAttribute("data-sort-notes")),
             )
-            .forEach((e, i) => {
-              e.style.gridRow = `${i + 2}`;
+            .forEach((e, i, arr) => {
+              if (
+                i == 0 ||
+                Math.floor(
+                  Number(arr[i - 1].getAttribute("data-sort-total")) /
+                    Number(arr[i - 1].getAttribute("data-sort-notes")) /
+                    0.15,
+                ) !==
+                  Math.floor(
+                    Number(e.getAttribute("data-sort-total")) /
+                      Number(e.getAttribute("data-sort-notes")) /
+                      0.15,
+                  )
+              ) {
+                const mark = document.createElement("div");
+                mark.classList.add("mark");
+                mark.classList.add("recover-mark");
+                mark.appendChild(
+                  document.createTextNode(
+                    `${(
+                      Math.floor(
+                        Number(e.getAttribute("data-sort-total")) /
+                          Number(e.getAttribute("data-sort-notes")) /
+                          0.15,
+                      ) * 0.15
+                    ).toFixed(3)}～${(
+                      Math.floor(
+                        Number(e.getAttribute("data-sort-total")) /
+                          Number(e.getAttribute("data-sort-notes")) /
+                          0.15,
+                      ) *
+                        0.15 +
+                      0.149
+                    ).toFixed(3)}`,
+                  ),
+                );
+                mark.setAttribute(
+                  "data-tn",
+                  `${
+                    Math.floor(
+                      Number(e.getAttribute("data-sort-total")) /
+                        Number(e.getAttribute("data-sort-notes")) /
+                        0.15,
+                    ) * 0.15
+                  }`,
+                );
+                mark.style.gridRow = `${2 * i + 2}`;
+                document.getElementById("chart_table")?.appendChild(mark);
+              }
+
+              e.style.gridRow = `${2 * i + 3}`;
             });
           break;
         default:
@@ -318,7 +518,7 @@ const iidxTotal = (notes: number) =>
   });
 </script>
 
-<style>
+<style is:global>
   @import "tailwindcss";
 
   #chart_table {
