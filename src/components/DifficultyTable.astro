@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
+import util from "node:util";
 
 interface Props {
   multimode: boolean;
@@ -13,109 +14,303 @@ const iidxTotal = (notes: number) =>
 ---
 
 <div id="chart_table" class={multimode ? "multimode" : ""}>
-  <div></div>
-  <div>IR</div>
-  <div>SCORE</div>
-  <div></div>
-  <div>LEVEL</div>
-  <div>GENRE</div>
-  <div>TITLE</div>
-  <div>ARTIST</div>
-  <div>JUDGE</div>
-  <div>BPM</div>
-  <div>LENGTH</div>
-  <div>NOTES</div>
-  <div>
-    譜面密度<br /><small>(NOTES/SEC.)</small>
-  </div>
-  <div>TOTAL</div>
-  <div>
-    回復量<br /><small>(T/N)</small>
+  <div id="header" class="line">
+    <div class="package" data-sort-mode="package"></div>
+    <div class="ir">IR</div>
+    <div class="chart">CHART</div>
+    <div class="player" data-sort-mode="player"></div>
+    <div class="level" data-sort-mode="level">LEVEL</div>
+    <div class="genre" data-sort-mode="genre">GENRE</div>
+    <div class="title" data-sort-mode="title">TITLE</div>
+    <div class="artist" data-sort-mode="artist">ARTIST</div>
+    <div class="judge" data-sort-mode="judge">JUDGE</div>
+    <div class="bpm" data-sort-mode="bpm">BPM</div>
+    <div class="length" data-sort-mode="length">LENGTH</div>
+    <div class="notes" data-sort-mode="notes">NOTES</div>
+    <div class="dense" data-sort-mode="dense">
+      譜面密度<br /><small>(NOTES/SEC.)</small>
+    </div>
+    <div class="total" data-sort-mode="total">TOTAL</div>
+    <div class="recover" data-sort-mode="recover">
+      回復量<br /><small>(T/N)</small>
+    </div>
   </div>
   {
-    list.map((v) => (
+    list.map((v, i, arr) => (
       <>
-        <div>
-          {v.data.package.series}
-          {(v.data.package.series === "plugout4" ||
-            v.data.package.series === "plugout5") && (
-            <>
+        {multimode &&
+          (i == 0 ||
+            !util.isDeepStrictEqual(arr[i - 1].data.package, v.data.package, {
+              skipPrototype: true,
+            })) && (
+            <div class="mark package-mark">
+              {v.data.package.series}
               <br />
-              <small>{v.data.package.phase}</small>
-            </>
+              {v.data.package.phase}
+            </div>
           )}
-        </div>
-        <div>
-          <a
-            href={`http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=${v.data.md5}`}
-          >
-            <img src="/LR2.png" class="inline size-[1lh]" />
-          </a>
-          <a
-            href={`https://mocha-repository.info/song.php?sha256=${v.data.sha256}`}
-          >
-            ☕
-          </a>
-          <a
-            href={`https://www.gaftalk.com/minir/#/viewer/song/${v.data.sha256}/0`}
-          >
-            <img src="/MinIR.png" class="inline size-[1lh]" />
-          </a>
-        </div>
-        <div>
-          <a
-            href={`https://bms-score-viewer.pages.dev/view?md5=${v.data.md5}`}
-            target="_blank"
-          >
-            📈
-          </a>
-        </div>
-        <div data-player={v.data.player}>
-          {v.data.player === "single" ? "SP" : "DP"}
-        </div>
-        <div data-level={v.data.level}>☆{v.data.level}</div>
-        <div>{v.data.genre}</div>
-        <div set:html={v.data.title.replace("(", "<br />(")} />
-        <div>{v.data.artist}</div>
-        <div data-judge={v.data.judge}>
-          {v.data.judge?.toUpperCase() ?? "―――"}
-        </div>
-        <div>
-          {Array.isArray(v.data.bpm)
-            ? `${v.data.bpm[0]}～${v.data.bpm[1]}`
-            : v.data.bpm}
-        </div>
-        <div>{v.data.length.toFixed(2)} s</div>
-        <div data-notes={v.data.notes}>{v.data.notes}</div>
-        <div data-dense={v.data.notes / v.data.length}>
-          {(v.data.notes / v.data.length).toFixed(3)}
-        </div>
         <div
-          data-iidx={
-            (v.data.total ?? iidxTotal(v.data.notes)) / iidxTotal(v.data.notes)
-          }
+          class="line"
+          data-sort-player={v.data.player}
+          data-sort-level={v.data.level}
+          data-sort-genre={v.data.genre}
+          data-sort-title={v.data.title}
+          data-sort-artist={v.data.artist}
+          data-sort-judge={v.data.judge}
+          data-sort-bpm={Array.isArray(v.data.bpm) ? v.data.bpm[0] : v.data.bpm}
+          data-sort-length={v.data.length}
+          data-sort-notes={v.data.notes}
+          data-sort-total={v.data.total ?? iidxTotal(v.data.notes)}
         >
-          {v.data.total !== undefined ? (
-            <>
-              {v.data.total.toFixed(2)}
-              <small class="tooltip">{`(FINAL比: ${((v.data.total * 100) / bmTotal(v.data.notes)).toFixed(2)}%, IIDX比: ${((v.data.total * 100) / iidxTotal(v.data.notes)).toFixed(2)}%)`}</small>
-            </>
-          ) : (
-            <>
-              ({iidxTotal(v.data.notes).toFixed(2)})
-              <small class="tooltip">{`(FINAL比: ${((iidxTotal(v.data.notes) * 100) / bmTotal(v.data.notes)).toFixed(2)}%, IIDX比: 100.00%)`}</small>
-            </>
-          )}
-        </div>
-        <div data-tn={(v.data.total ?? iidxTotal(v.data.notes)) / v.data.notes}>
-          {v.data.total !== undefined
-            ? (v.data.total / v.data.notes).toFixed(3)
-            : `(${(iidxTotal(v.data.notes) / v.data.notes).toFixed(3)})`}
+          <div class="package">
+            {v.data.package.series}
+            {(v.data.package.series === "plugout4" ||
+              v.data.package.series === "plugout5") && (
+              <>
+                <br />
+                <small>{v.data.package.phase}</small>
+              </>
+            )}
+          </div>
+          <div class="ir">
+            <a
+              href={`http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=${v.data.md5}`}
+            >
+              <img src="/LR2.png" class="inline size-[1lh]" />
+            </a>
+            <a
+              href={`https://mocha-repository.info/song.php?sha256=${v.data.sha256}`}
+            >
+              ☕
+            </a>
+            <a
+              href={`https://www.gaftalk.com/minir/#/viewer/song/${v.data.sha256}/0`}
+            >
+              <img src="/MinIR.png" class="inline size-[1lh]" />
+            </a>
+          </div>
+          <div class="chart">
+            <a
+              href={`https://bms-score-viewer.pages.dev/view?md5=${v.data.md5}`}
+              target="_blank"
+            >
+              📈
+            </a>
+          </div>
+          <div class="player" data-player={v.data.player}>
+            {v.data.player === "single" ? "SP" : "DP"}
+          </div>
+          <div class="level" data-level={v.data.level}>
+            ☆{v.data.level}
+          </div>
+          <div class="genre">{v.data.genre}</div>
+          <div class="title" set:html={v.data.title.replace("(", "<br />(")} />
+          <div class="artist">{v.data.artist}</div>
+          <div class="judge" data-judge={v.data.judge}>
+            {v.data.judge?.toUpperCase() ?? "―――"}
+          </div>
+          <div class="bpm">
+            {Array.isArray(v.data.bpm)
+              ? `${v.data.bpm[0]}～${v.data.bpm[1]}`
+              : v.data.bpm}
+          </div>
+          <div class="length">{v.data.length.toFixed(2)} s</div>
+          <div class="notes" data-notes={v.data.notes}>
+            {v.data.notes}
+          </div>
+          <div class="dense" data-dense={v.data.notes / v.data.length}>
+            {(v.data.notes / v.data.length).toFixed(3)}
+          </div>
+          <div
+            class="total"
+            data-iidx={
+              (v.data.total ?? iidxTotal(v.data.notes)) /
+              iidxTotal(v.data.notes)
+            }
+          >
+            {v.data.total !== undefined ? (
+              <>
+                {v.data.total.toFixed(2)}
+                <small class="tooltip">{`(FINAL比: ${((v.data.total * 100) / bmTotal(v.data.notes)).toFixed(2)}%, IIDX比: ${((v.data.total * 100) / iidxTotal(v.data.notes)).toFixed(2)}%)`}</small>
+              </>
+            ) : (
+              <>
+                ({iidxTotal(v.data.notes).toFixed(2)})
+                <small class="tooltip">{`(FINAL比: ${((iidxTotal(v.data.notes) * 100) / bmTotal(v.data.notes)).toFixed(2)}%, IIDX比: 100.00%)`}</small>
+              </>
+            )}
+          </div>
+          <div
+            class="recover"
+            data-tn={(v.data.total ?? iidxTotal(v.data.notes)) / v.data.notes}
+          >
+            {v.data.total !== undefined
+              ? (v.data.total / v.data.notes).toFixed(3)
+              : `(${(iidxTotal(v.data.notes) / v.data.notes).toFixed(3)})`}
+          </div>
         </div>
       </>
     ))
   }
 </div>
+
+<script>
+  const judges = ["easy", "normal", "hard", "veryhard"];
+  const headers = document.querySelectorAll("#header > div[data-sort-mode]");
+  const lines = [...document.querySelectorAll("div.line:not(#header)")];
+  const sorter = new Intl.Collator().compare;
+
+  headers.forEach((head) => {
+    head.addEventListener("click", () => {
+      for (const e of document.querySelectorAll(".package-mark")) {
+        e.style.display = "none";
+      }
+      const sortMode = head.getAttribute("data-sort-mode");
+      switch (sortMode) {
+        case "package":
+          for (const e of document.querySelectorAll(".package-mark")) {
+            e.style.display = "block";
+          }
+          lines.forEach((e) => {
+            e.style.gridRow = null;
+          });
+          break;
+        case "level":
+          lines
+            .sort(
+              (a, b) =>
+                Number(a.getAttribute("data-sort-level")) -
+                Number(b.getAttribute("data-sort-level")),
+            )
+            .forEach((e, i) => {
+              e.style.gridRow = i + 2;
+            });
+          break;
+        case "genre":
+          lines
+            .sort((a, b) =>
+              sorter(
+                a.getAttribute("data-sort-genre") ?? "",
+                b.getAttribute("data-sort-genre") ?? "",
+              ),
+            )
+            .forEach((e, i) => {
+              e.style.gridRow = i + 2;
+            });
+          break;
+        case "title":
+          lines
+            .sort((a, b) =>
+              sorter(
+                a.getAttribute("data-sort-title") ?? "",
+                b.getAttribute("data-sort-title") ?? "",
+              ),
+            )
+            .forEach((e, i) => {
+              e.style.gridRow = i + 2;
+            });
+          break;
+        case "artist":
+          lines
+            .sort((a, b) =>
+              sorter(
+                a.getAttribute("data-sort-artist") ?? "",
+                b.getAttribute("data-sort-artist") ?? "",
+              ),
+            )
+            .forEach((e, i) => {
+              e.style.gridRow = i + 2;
+            });
+          break;
+        case "judge":
+          lines
+            .sort(
+              (a, b) =>
+                judges.findIndex(
+                  (v) => v == a.getAttribute("data-sort-judge"),
+                ) -
+                judges.findIndex((v) => v == b.getAttribute("data-sort-judge")),
+            )
+            .forEach((e, i) => {
+              e.style.gridRow = i + 2;
+            });
+          break;
+        case "bpm":
+          lines
+            .sort(
+              (a, b) =>
+                Number(a.getAttribute("data-sort-bpm")) -
+                Number(b.getAttribute("data-sort-bpm")),
+            )
+            .forEach((e, i) => {
+              e.style.gridRow = i + 2;
+            });
+          break;
+        case "length":
+          lines
+            .sort(
+              (a, b) =>
+                Number(a.getAttribute("data-sort-length")) -
+                Number(b.getAttribute("data-sort-length")),
+            )
+            .forEach((e, i) => {
+              e.style.gridRow = i + 2;
+            });
+          break;
+        case "notes":
+          lines
+            .sort(
+              (a, b) =>
+                Number(a.getAttribute("data-sort-notes")) -
+                Number(b.getAttribute("data-sort-notes")),
+            )
+            .forEach((e, i) => {
+              e.style.gridRow = i + 2;
+            });
+          break;
+        case "dense":
+          lines
+            .sort(
+              (a, b) =>
+                Number(a.getAttribute("data-sort-notes")) /
+                  Number(a.getAttribute("data-sort-length")) -
+                Number(b.getAttribute("data-sort-notes")) /
+                  Number(b.getAttribute("data-sort-length")),
+            )
+            .forEach((e, i) => {
+              e.style.gridRow = i + 2;
+            });
+          break;
+        case "total":
+          lines
+            .sort(
+              (a, b) =>
+                Number(a.getAttribute("data-sort-total")) -
+                Number(b.getAttribute("data-sort-total")),
+            )
+            .forEach((e, i) => {
+              e.style.gridRow = i + 2;
+            });
+          break;
+        case "recover":
+          lines
+            .sort(
+              (a, b) =>
+                Number(a.getAttribute("data-sort-total")) /
+                  Number(a.getAttribute("data-sort-notes")) -
+                Number(b.getAttribute("data-sort-total")) /
+                  Number(b.getAttribute("data-sort-notes")),
+            )
+            .forEach((e, i) => {
+              e.style.gridRow = i + 2;
+            });
+          break;
+        default:
+          break;
+      }
+    });
+  });
+</script>
 
 <style>
   @import "tailwindcss";
@@ -138,7 +333,7 @@ const iidxTotal = (notes: number) =>
       min-content max-content max-content min-content min-content min-content min-content;
   }
 
-  #chart_table > div {
+  #chart_table div:not(.line) {
     @apply border-b border-r border-mist-800/40;
 
     position: relative;
@@ -146,15 +341,21 @@ const iidxTotal = (notes: number) =>
     text-align: center;
   }
 
-  #chart_table > div[data-player="single"] {
+  #chart_table > div.line {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: 1 / -1;
+  }
+
+  div[data-player="single"] {
     @apply bg-blue-400/30;
   }
 
-  #chart_table > div[data-player="double"] {
+  div[data-player="double"] {
     @apply bg-red-400/30;
   }
 
-  #chart_table > div[data-level] {
+  div[data-level] {
     --level: attr(data-level type(<number>));
     --level-low: min(max(calc(var(--level) - 5), 0), 1);
     --level-hi: min(max(calc(var(--level) - 9), 0), 1);
@@ -188,23 +389,23 @@ const iidxTotal = (notes: number) =>
     background-color: color-mix(in srgb, var(--diffcolor), transparent 75%);
   }
 
-  #chart_table > div[data-judge="easy"] {
+  div[data-judge="easy"] {
     @apply bg-green-400/25;
   }
 
-  #chart_table > div[data-judge="normal"] {
+  div[data-judge="normal"] {
     @apply bg-yellow-400/25;
   }
 
-  #chart_table > div[data-judge="hard"] {
+  div[data-judge="hard"] {
     @apply bg-red-500/25;
   }
 
-  #chart_table > div[data-judge="veryhard"] {
+  div[data-judge="veryhard"] {
     @apply bg-purple-500/25;
   }
 
-  #chart_table > div[data-notes] {
+  div[data-notes] {
     --chart-notes: attr(data-notes type(<number>));
 
     --color-low: color-mix(
@@ -234,7 +435,7 @@ const iidxTotal = (notes: number) =>
     background-color: color-mix(in srgb, var(--color-mixed), transparent 75%);
   }
 
-  #chart_table > div[data-dense] {
+  div[data-dense] {
     --dense-rate: attr(data-dense type(<number>));
 
     background-color: color-mix(
@@ -248,7 +449,7 @@ const iidxTotal = (notes: number) =>
     );
   }
 
-  #chart_table > div[data-iidx] {
+  div[data-iidx] {
     --totalRate: attr(data-iidx type(<number>));
 
     --color-low: color-mix(
@@ -274,7 +475,7 @@ const iidxTotal = (notes: number) =>
     background-color: color-mix(in srgb, var(--color-mixed), transparent 75%);
   }
 
-  #chart_table > div[data-tn] {
+  div[data-tn] {
     --totalRate: attr(data-tn type(<number>));
 
     --color-total: color-mix(
@@ -286,32 +487,38 @@ const iidxTotal = (notes: number) =>
     background-color: color-mix(in srgb, var(--color-total), transparent 75%);
   }
 
-  #chart_table > div:nth-child(-n + 15) {
+  div#header > div {
     font-size: 0.6rem;
     font-weight: bold;
     padding: 0.2rem 0.3rem;
   }
 
-  #chart_table > div:nth-child(15n + 1) {
+  div.package {
     font-size: 0.6rem;
     font-weight: bold;
   }
 
-  #chart_table > div:nth-child(15n + 21),
-  #chart_table > div:nth-child(15n + 22),
-  #chart_table > div:nth-child(15n + 23) {
+  div.genre,
+  div.title,
+  div.artist {
     font-family: "M PLUS 1p", sans-serif;
   }
 
-  #chart_table > div:nth-child(15n + 7) {
+  div.title {
     font-weight: bold;
   }
 
-  #chart_table:not(.multimode) > div:nth-child(15n + 1) {
+  #chart_table:not(.multimode) div.package {
     display: none;
   }
 
-  #chart_table > div > .tooltip {
+  div.mark {
+    grid-column: 1 / -1;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  div > .tooltip {
     display: none;
     position: absolute;
     width: max-content;
@@ -323,7 +530,7 @@ const iidxTotal = (notes: number) =>
     z-index: 2;
   }
 
-  #chart_table > div:hover > .tooltip {
+  div:hover > .tooltip {
     display: block;
   }
 </style>

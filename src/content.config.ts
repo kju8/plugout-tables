@@ -9,8 +9,14 @@ const charts = defineCollection({
   schema: z.object({
     player: z.enum(["single", "double"]),
     package: z.discriminatedUnion("series", [
-      z.object({ series: z.literal("plugout1") }),
-      z.object({ series: z.literal("plugout3") }),
+      z.object({
+        series: z.literal("plugout1"),
+        phase: z.null().default(null),
+      }),
+      z.object({
+        series: z.literal("plugout3"),
+        phase: z.null().default(null),
+      }),
       z.object({
         series: z.literal("plugout4"),
         phase: z.enum([
