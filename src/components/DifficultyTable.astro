@@ -450,8 +450,8 @@ const iidxTotal = (notes: number) =>
               if (
                 i == 0 ||
                 Math.floor(
-                  Number(arr[i - 1].getAttribute("data-sort-total")) / 50,
-                ) !== Math.floor(Number(e.getAttribute("data-sort-total")) / 50)
+                  Number(arr[i - 1].getAttribute("data-sort-total")) / 25,
+                ) !== Math.floor(Number(e.getAttribute("data-sort-total")) / 25)
               ) {
                 const mark = document.createElement("div");
                 mark.classList.add("mark");
@@ -460,18 +460,25 @@ const iidxTotal = (notes: number) =>
                   document.createTextNode(
                     `${(
                       Math.floor(
-                        Number(e.getAttribute("data-sort-total")) / 50,
-                      ) * 50
+                        Number(e.getAttribute("data-sort-total")) / 25,
+                      ) * 25
                     ).toFixed(2)}～${(
                       Math.floor(
-                        Number(e.getAttribute("data-sort-total")) / 50,
+                        Number(e.getAttribute("data-sort-total")) / 25,
                       ) *
-                        50 +
-                      49.99
+                        25 +
+                      24.99
                     ).toFixed(2)}`,
                   ),
                 );
                 mark.style.gridRow = `${2 * i + 2}`;
+                mark.setAttribute(
+                  "data-total",
+                  `${
+                    Math.floor(Number(e.getAttribute("data-sort-total")) / 25) *
+                    25
+                  }`,
+                );
                 document.getElementById("chart_table")?.appendChild(mark);
               }
 
@@ -494,12 +501,12 @@ const iidxTotal = (notes: number) =>
                 Math.floor(
                   Number(arr[i - 1].getAttribute("data-sort-total")) /
                     Number(arr[i - 1].getAttribute("data-sort-notes")) /
-                    0.15,
+                    0.1,
                 ) !==
                   Math.floor(
                     Number(e.getAttribute("data-sort-total")) /
                       Number(e.getAttribute("data-sort-notes")) /
-                      0.15,
+                      0.1,
                   )
               ) {
                 const mark = document.createElement("div");
@@ -511,16 +518,16 @@ const iidxTotal = (notes: number) =>
                       Math.floor(
                         Number(e.getAttribute("data-sort-total")) /
                           Number(e.getAttribute("data-sort-notes")) /
-                          0.15,
-                      ) * 0.15
+                          0.1,
+                      ) * 0.1
                     ).toFixed(3)}～${(
                       Math.floor(
                         Number(e.getAttribute("data-sort-total")) /
                           Number(e.getAttribute("data-sort-notes")) /
-                          0.15,
+                          0.1,
                       ) *
-                        0.15 +
-                      0.149
+                        0.1 +
+                      0.099
                     ).toFixed(3)}`,
                   ),
                 );
@@ -701,6 +708,20 @@ const iidxTotal = (notes: number) =>
         in hsl,
         var(--color-green-400),
         var(--color-red-600) min(calc(100% * var(--dense-rate) / 12), 100%)
+      ),
+      transparent 75%
+    );
+  }
+
+  div[data-total] {
+    --total: attr(data-total type(<number>));
+
+    background-color: color-mix(
+      in srgb,
+      color-mix(
+        in hsl,
+        var(--color-green-400),
+        var(--color-yellow-500) min(calc(100% * var(--total) / 666), 100%)
       ),
       transparent 75%
     );
