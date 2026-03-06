@@ -156,23 +156,29 @@ const iidxTotal = (notes: number) =>
 
 <script>
   const judges = ["easy", "normal", "hard", "veryhard"];
-  const headers = document.querySelectorAll("#header > div[data-sort-mode]");
-  const lines = [...document.querySelectorAll("div.line:not(#header)")];
+  const headers = document.querySelectorAll<HTMLElement>(
+    "#header > div[data-sort-mode]",
+  );
+  const lines = [
+    ...document.querySelectorAll<HTMLElement>("div.line:not(#header)"),
+  ];
   const sorter = new Intl.Collator().compare;
 
   headers.forEach((head) => {
     head.addEventListener("click", () => {
-      for (const e of document.querySelectorAll(".package-mark")) {
+      for (const e of document.querySelectorAll<HTMLElement>(".package-mark")) {
         e.style.display = "none";
       }
       const sortMode = head.getAttribute("data-sort-mode");
       switch (sortMode) {
         case "package":
-          for (const e of document.querySelectorAll(".package-mark")) {
+          for (const e of document.querySelectorAll<HTMLElement>(
+            ".package-mark",
+          )) {
             e.style.display = "block";
           }
           lines.forEach((e) => {
-            e.style.gridRow = null;
+            e.style.gridRow = "";
           });
           break;
         case "level":
@@ -183,7 +189,7 @@ const iidxTotal = (notes: number) =>
                 Number(b.getAttribute("data-sort-level")),
             )
             .forEach((e, i) => {
-              e.style.gridRow = i + 2;
+              e.style.gridRow = `${i + 2}`;
             });
           break;
         case "genre":
@@ -195,7 +201,7 @@ const iidxTotal = (notes: number) =>
               ),
             )
             .forEach((e, i) => {
-              e.style.gridRow = i + 2;
+              e.style.gridRow = `${i + 2}`;
             });
           break;
         case "title":
@@ -207,7 +213,7 @@ const iidxTotal = (notes: number) =>
               ),
             )
             .forEach((e, i) => {
-              e.style.gridRow = i + 2;
+              e.style.gridRow = `${i + 2}`;
             });
           break;
         case "artist":
@@ -219,7 +225,7 @@ const iidxTotal = (notes: number) =>
               ),
             )
             .forEach((e, i) => {
-              e.style.gridRow = i + 2;
+              e.style.gridRow = `${i + 2}`;
             });
           break;
         case "judge":
@@ -232,7 +238,7 @@ const iidxTotal = (notes: number) =>
                 judges.findIndex((v) => v == b.getAttribute("data-sort-judge")),
             )
             .forEach((e, i) => {
-              e.style.gridRow = i + 2;
+              e.style.gridRow = `${i + 2}`;
             });
           break;
         case "bpm":
@@ -243,7 +249,7 @@ const iidxTotal = (notes: number) =>
                 Number(b.getAttribute("data-sort-bpm")),
             )
             .forEach((e, i) => {
-              e.style.gridRow = i + 2;
+              e.style.gridRow = `${i + 2}`;
             });
           break;
         case "length":
@@ -254,7 +260,7 @@ const iidxTotal = (notes: number) =>
                 Number(b.getAttribute("data-sort-length")),
             )
             .forEach((e, i) => {
-              e.style.gridRow = i + 2;
+              e.style.gridRow = `${i + 2}`;
             });
           break;
         case "notes":
@@ -265,7 +271,7 @@ const iidxTotal = (notes: number) =>
                 Number(b.getAttribute("data-sort-notes")),
             )
             .forEach((e, i) => {
-              e.style.gridRow = i + 2;
+              e.style.gridRow = `${i + 2}`;
             });
           break;
         case "dense":
@@ -278,7 +284,7 @@ const iidxTotal = (notes: number) =>
                   Number(b.getAttribute("data-sort-length")),
             )
             .forEach((e, i) => {
-              e.style.gridRow = i + 2;
+              e.style.gridRow = `${i + 2}`;
             });
           break;
         case "total":
@@ -289,7 +295,7 @@ const iidxTotal = (notes: number) =>
                 Number(b.getAttribute("data-sort-total")),
             )
             .forEach((e, i) => {
-              e.style.gridRow = i + 2;
+              e.style.gridRow = `${i + 2}`;
             });
           break;
         case "recover":
@@ -302,7 +308,7 @@ const iidxTotal = (notes: number) =>
                   Number(b.getAttribute("data-sort-notes")),
             )
             .forEach((e, i) => {
-              e.style.gridRow = i + 2;
+              e.style.gridRow = `${i + 2}`;
             });
           break;
         default:
