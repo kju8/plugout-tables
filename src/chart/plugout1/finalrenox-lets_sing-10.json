@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout1" },
+
+  "songId": "1-finalrenox-lets_sing",
+  "player": "double",
+  "level": 1,
+  "genre": "ELECTRONICA",
+  "title": "Let's Sing",
+  "artist": "Final Renox",
+
+  "md5": "65b5dc95d21cf510768dbabbc7fb96eb",
+  "sha256": "ede6aa3d18e48bfc94a22883c775181e45466c4942ca820a95c1471913453514",
+
+  "bpm": 89,
+  "notes": 84,
+  "total": 225,
+  "length": 92.02,
+  "judge": "easy"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout1" },
+
+  "songId": "3-socer-the_storage",
+  "player": "single",
+  "level": 3,
+  "genre": "AMBIENT",
+  "title": "The Storage (Re-edit)",
+  "artist": "socer",
+
+  "md5": "5f7f3f353c38c4c96a09398bcf78030e",
+  "sha256": "73d8adbfd05473d3af54f79aad4b948d878633eb8c576938ea8986f194891e36",
+
+  "bpm": 118,
+  "notes": 468,
+  "total": 280,
+  "length": 143.39,
+  "judge": "normal"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout1" },
+
+  "songId": "5-tiy-radiant_stream",
+  "player": "single",
+  "level": 5,
+  "genre": "TECHNO CLASSIC",
+  "title": "radiant stream",
+  "artist": "TiY",
+
+  "md5": "56e8ec4e13b9de79c1d21c83796b5d09",
+  "sha256": "9c7a6f09f6750c0dd105a33e36ac054629464456a6de0c02745f79c52a49e7d2",
+
+  "bpm": 130,
+  "notes": 506,
+  "total": 294,
+  "length": 116.19,
+  "judge": "hard"
+}

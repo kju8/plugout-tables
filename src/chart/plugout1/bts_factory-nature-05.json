@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout1" },
+
+  "songId": "7-bts_factory-nature",
+  "player": "single",
+  "level": 7,
+  "genre": "ENVIRONMENT",
+  "title": "nature",
+  "artist": "Bts-Factory",
+
+  "md5": "93c88697482510d2656780346a984857",
+  "sha256": "a4ff8f10e7897f8e631b2f8ef984afc046782724960491b4cc972c8272e246ab",
+
+  "bpm": [35, 245],
+  "notes": 960,
+  "total": 282,
+  "length": 174.86,
+  "judge": "normal"
+}

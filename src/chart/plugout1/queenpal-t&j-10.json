@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout1" },
+
+  "songId": "8-queenpal-t&j",
+  "player": "double",
+  "level": 8,
+  "genre": "PROGRESSIVE ROCK",
+  "title": "T&J",
+  "artist": "Queen P.A.L. & Hime with VJ KinTa",
+
+  "md5": "47a9732b2147dfc262e3fc6223208c5b",
+  "sha256": "cb8722a6b012d4c1ae8f0fd66957e89e8033eee0b0a9cd6bb238e7245cbab8df",
+
+  "bpm": [191, 284],
+  "notes": 773,
+  "total": 350,
+  "length": 123.64,
+  "judge": "easy"
+}

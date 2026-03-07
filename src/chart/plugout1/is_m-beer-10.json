@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout1" },
+
+  "songId": "9-is_m-beer",
+  "player": "double",
+  "level": 9,
+  "genre": "COLLAGE TECHNO",
+  "title": "BEER",
+  "artist": "Is-m",
+
+  "md5": "11d71ccbc5cd99a9ec27957c130a7040",
+  "sha256": "29bf475350e4bc44ad138304c0f317c301bda2fd0b5fce3335f7576e8e23244a",
+
+  "bpm": 158,
+  "notes": 1068,
+  "total": 350,
+  "length": 103.16,
+  "judge": "normal"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout1" },
+
+  "songId": "6-udsv-cournot",
+  "player": "double",
+  "level": 7,
+  "genre": "PSYCHEDELIC",
+  "title": "Cournot",
+  "artist": "UDSV",
+
+  "md5": "088be6a4cfa5cffea921b902a8a0d146",
+  "sha256": "1d087e7ca26774f2aec95d9c09620ac3db5a40ca159628cfedf75234f9ec0248",
+
+  "bpm": 150,
+  "notes": 832,
+  "total": 325,
+  "length": 144.35,
+  "judge": "normal"
+}

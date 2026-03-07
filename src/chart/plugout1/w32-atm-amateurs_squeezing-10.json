@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout1" },
+
+  "songId": "6-w32-atm-amateurs_squeezing",
+  "player": "double",
+  "level": 8,
+  "genre": "DRUMFUNK",
+  "title": "Amateurs' squeezing (jam jam jungler inspired)",
+  "artist": "w32 remixed atmosphere",
+
+  "md5": "dfaeb8b360405aa8c03420001edcef27",
+  "sha256": "aabeb19e802826359cac333d40fa1f3c88f938da4be4ddcc07d8802b2afdc667",
+
+  "bpm": 160,
+  "notes": 933,
+  "total": 375,
+  "length": 151.5,
+  "judge": "normal"
+}

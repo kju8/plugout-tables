@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout1" },
+
+  "songId": "5-tankobo-seidaku",
+  "player": "single",
+  "level": 5,
+  "genre": "EXPERIMENTAL",
+  "title": "靜濁",
+  "artist": "丹古母鬼馬二",
+
+  "md5": "695dea530549d46878b4d95e852ad980",
+  "sha256": "03ce435f010560bb0c16d1e3817d20902f67cb88ea895b49cd44141376e101a2",
+
+  "bpm": 98,
+  "notes": 751,
+  "total": 250,
+  "length": 173.95,
+  "judge": "hard"
+}

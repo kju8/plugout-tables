@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout1" },
+
+  "songId": "4-wit_da_masta-invasion",
+  "player": "single",
+  "level": 4,
+  "genre": "TRIPHOP",
+  "title": "invasion",
+  "artist": "wit da masta",
+
+  "md5": "6f57c8c3b641dcc18aa477676e0cd8fc",
+  "sha256": "d221f505e9958f34980fd84e1c91f5f7eb80b5337b696d40caa984badf7ed694",
+
+  "bpm": 160,
+  "notes": 256,
+  "total": 287,
+  "length": 105.88,
+  "judge": "veryhard"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout1" },
+
+  "songId": "7-is_m-blank_moon",
+  "player": "single",
+  "level": 7,
+  "genre": "TECHNO",
+  "title": "blank moon",
+  "artist": "Is-m",
+
+  "md5": "b157d8a1f1879cecf3a5ffe48f64446b",
+  "sha256": "22f358384ca8571ca017ea127c37893a28f4e8c060898a0fb8a734656293b085",
+
+  "bpm": 140,
+  "notes": 493,
+  "total": 250,
+  "length": 92.57,
+  "judge": "normal"
+}

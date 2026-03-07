@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout1" },
+
+  "songId": "3-o_se-hinemosu",
+  "player": "single",
+  "level": 3,
+  "genre": "IRONIC BEATS",
+  "title": "終日",
+  "artist": "O-SE",
+
+  "md5": "1948ee0df987d899db21d9de315992d2",
+  "sha256": "5a41233e0be71a5d2a53ba0cb3ad904a8b6d474c86d67dab0677bdca76c6e8c4",
+
+  "bpm": 120,
+  "notes": 230,
+  "total": 354,
+  "length": 91.5,
+  "judge": "hard"
+}

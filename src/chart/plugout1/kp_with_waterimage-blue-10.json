@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout1" },
+
+  "songId": "6-kp_with_waterimage-blue",
+  "player": "double",
+  "level": 7,
+  "genre": "HOUSE",
+  "title": "Blue",
+  "artist": "Kuroneko Project with waterimage",
+
+  "md5": "ff1bf94ea82ff706013e7a16d5532a43",
+  "sha256": "1c62f074cfce2bd0dc13ae2531795adb257e07be0ef3b56238cd6682e8505f7c",
+
+  "bpm": 126,
+  "notes": 844,
+  "total": 300,
+  "length": 135.4,
+  "judge": "normal"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout1" },
+
+  "songId": "4-cube-symmetrical_14",
+  "player": "single",
+  "level": 4,
+  "genre": "DUB AMBIENT",
+  "title": "Symmetrical #14",
+  "artist": "cube",
+
+  "md5": "ca673d5febc0ddb8d4c83c7e023f8830",
+  "sha256": "076cd52a55b4453bda545c2be9ffbb3ec838d13ce68891cea116fc43561f95f8",
+
+  "bpm": 90,
+  "notes": 341,
+  "total": 280,
+  "length": 136.0,
+  "judge": "veryhard"
+}

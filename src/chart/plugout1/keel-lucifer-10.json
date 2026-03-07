@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout1" },
+
+  "songId": "3-keel-lucifer",
+  "player": "double",
+  "level": 3,
+  "genre": "ARTCORE",
+  "title": "LUCIFER",
+  "artist": "KeeL",
+
+  "md5": "699e16fa09f23087b16656749b02f51c",
+  "sha256": "5ce0581debc87708d20392bcd11db6cbf76be37f108ecac53ebc3d879c772434",
+
+  "bpm": [50, 172],
+  "notes": 379,
+  "total": 275,
+  "length": 129.95,
+  "judge": "normal"
+}

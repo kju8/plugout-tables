@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout1" },
+
+  "songId": "5-fen-red_film",
+  "player": "single",
+  "level": 5,
+  "genre": "SOUNDTRACK",
+  "title": "Red Film -main theme-",
+  "artist": "fen",
+
+  "md5": "3edc6bd30fb73df753a8f9ad3922692a",
+  "sha256": "a0e2061c1387fe6285030f373b3a19022bb98e12840ec60543d7052c523bc536",
+
+  "bpm": 168,
+  "notes": 588,
+  "total": 250,
+  "length": 121.47,
+  "judge": "easy"
+}

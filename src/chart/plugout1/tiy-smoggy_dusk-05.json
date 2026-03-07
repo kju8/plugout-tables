@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout1" },
+
+  "songId": "3-tiy-smoggy_dusk",
+  "player": "single",
+  "level": 3,
+  "genre": "DRUM'N'BASS",
+  "title": "smoggy dusk",
+  "artist": "TiY",
+
+  "md5": "b73edcafdaed40f4f341a44351b07a0f",
+  "sha256": "ab9e26ce670eacdbcc424a3f7cb4f1310e70b87130807a435af269fb184b9854",
+
+  "bpm": 182,
+  "notes": 326,
+  "total": 250,
+  "length": 135.74,
+  "judge": "easy"
+}

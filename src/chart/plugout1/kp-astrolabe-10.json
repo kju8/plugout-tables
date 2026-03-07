@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout1" },
+
+  "songId": "6-kp-astrolabe",
+  "player": "double",
+  "level": 7,
+  "genre": "HARD TRANCE",
+  "title": "Astrolabe",
+  "artist": "Kuroneko Project",
+
+  "md5": "3bd437f00d7463a4f8dfff53ee15a7a1",
+  "sha256": "ca88b685851ef73e7703d58f1b3713e4465810495de4df003d9dbdfbac863892",
+
+  "bpm": 142,
+  "notes": 651,
+  "total": 325,
+  "length": 86.2,
+  "judge": "normal"
+}

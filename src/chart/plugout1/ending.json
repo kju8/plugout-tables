@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout1" },
+
+  "songId": "0-ending",
+  "player": "single",
+  "level": 0,
+  "genre": "ENDING...",
+  "title": "Rebirth of the new world",
+  "artist": "fen",
+
+  "md5": "aafcbdc3c0005ae24032c073bf65f451",
+  "sha256": "c2ae57914802f960d1a6f289d026443a7ac0cef7372d04ff46528dfcededaa20",
+
+  "bpm": 150,
+  "notes": 0,
+  "length": 102
+}

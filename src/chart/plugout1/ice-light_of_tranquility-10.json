@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout1" },
+
+  "songId": "1-ice-light_of_tranquility",
+  "player": "double",
+  "level": 3,
+  "genre": "HEALING",
+  "title": "light of tranquility",
+  "artist": "ice",
+
+  "md5": "8f4a2b2ad7065f482404ebd99f26904e",
+  "sha256": "b70eff40d48726391bdf15b2f17e51a50d7f1f267c44a69feac8c89b38bc76b4",
+
+  "bpm": 116,
+  "notes": 224,
+  "total": 250,
+  "length": 103.45,
+  "judge": "normal"
+}

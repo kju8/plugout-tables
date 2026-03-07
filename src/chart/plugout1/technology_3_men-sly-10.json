@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout1" },
+
+  "songId": "7-technology_3_men-sly",
+  "player": "double",
+  "level": 8,
+  "genre": "HARD TECHNO",
+  "title": "SLY",
+  "artist": "technology 3 men",
+
+  "md5": "6e8d83fb67bd6b6b168f3bb07ff5c4f7",
+  "sha256": "55b2b12434b2c44ab07c86c8378c27f93a6bbe6b4cb3f6599ff34c878f25abee",
+
+  "bpm": 137,
+  "notes": 1002,
+  "total": 350,
+  "length": 121.7,
+  "judge": "normal"
+}

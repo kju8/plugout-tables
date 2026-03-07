@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout1" },
+
+  "songId": "4-socer-ningen",
+  "player": "single",
+  "level": 4,
+  "genre": "HIPHOP",
+  "title": "ningen",
+  "artist": "socer",
+
+  "md5": "1a02f09d99fb67d1805e2d1714dbcd32",
+  "sha256": "8564fb397d600353de5bf675dc571de088f12bb14553a4bd5792bacda9dd66f1",
+
+  "bpm": 84,
+  "notes": 284,
+  "total": 250,
+  "length": 107.72,
+  "judge": "hard"
+}

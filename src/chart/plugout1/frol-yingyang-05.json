@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout1" },
+
+  "songId": "4-frol-yingyang",
+  "player": "single",
+  "level": 4,
+  "genre": "BREAKBEATS TRANCE",
+  "title": "陰陽",
+  "artist": "FROL",
+
+  "md5": "0c4fb06ade3dae536ef6ff82f7f2adaa",
+  "sha256": "c5cfcd7065c3b6c963a874d1f194712dcf6322a87dbd5d7c03c75af19afded08",
+
+  "bpm": 135,
+  "notes": 389,
+  "total": 215,
+  "length": 115.56,
+  "judge": "normal"
+}

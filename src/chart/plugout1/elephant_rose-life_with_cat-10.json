@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout1" },
+
+  "songId": "7-elephant_rose-life_with_cat",
+  "player": "double",
+  "level": 7,
+  "genre": "HARENTI TECHNO",
+  "title": "Life-With-Cat",
+  "artist": "elephant&rose",
+
+  "md5": "1d99f1eaf44bf2ccb62f24ec2df66b59",
+  "sha256": "8deffd46d2c5939103dee567181a494e1dccf83418a6ed9ba1035b42624a77d4",
+
+  "bpm": 150,
+  "notes": 717,
+  "total": 325,
+  "length": 105.65,
+  "judge": "easy"
+}

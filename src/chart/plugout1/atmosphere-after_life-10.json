@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout1" },
+
+  "songId": "9-atmosphere-after_life",
+  "player": "double",
+  "level": 9,
+  "genre": "DARKSTEP",
+  "title": "Afterlife (omegaI inspired)",
+  "artist": "Nirr&Studio Chieph /Remixed ARMYSHOP",
+
+  "md5": "7cad8136241ce7cc4607cbf084a83c56",
+  "sha256": "b3285050dfb1882754f9a9dc00ef73a9bdd43f17c8497e95f73f38d3edce9ac3",
+
+  "bpm": 188,
+  "notes": 924,
+  "total": 375,
+  "length": 135.48,
+  "judge": "easy"
+}

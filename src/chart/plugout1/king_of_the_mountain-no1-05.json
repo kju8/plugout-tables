@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout1" },
+
+  "songId": "2-king_of_the_mountain-no1",
+  "player": "single",
+  "level": 2,
+  "genre": "JUNGLE",
+  "title": "No.1",
+  "artist": "King of the Mountain",
+
+  "md5": "82d4c238339f137bc1f23e7bf6a1e225",
+  "sha256": "08b11fd24021114c6348e44ef8f1142f3090b3041cefe78c2d2cb16a73db51a1",
+
+  "bpm": 160,
+  "notes": 340,
+  "total": 280,
+  "length": 143.88,
+  "judge": "easy"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout1" },
+
+  "songId": "6-nirr_theendoflife",
+  "player": "single",
+  "level": 6,
+  "genre": "EASE",
+  "title": "The End of Life",
+  "artist": "ATM/mixed Nirr",
+
+  "md5": "257ca9f2a8923a0fffd6b3d8a0d73693",
+  "sha256": "647d63e85289d0e63831e9325a0dfde806ec7548e7d052c51fd472e0083533a6",
+
+  "bpm": 144,
+  "notes": 442,
+  "total": 186,
+  "length": 116.67,
+  "judge": "hard"
+}

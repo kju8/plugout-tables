@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout1" },
+
+  "songId": "6-michael_poqochanchyn-the_surplus_of_love",
+  "player": "single",
+  "level": 6,
+  "genre": "HARD HOUSE",
+  "title": "the surplus of love",
+  "artist": "Michael Poqochanchyn",
+
+  "md5": "d61ba9b4d9e65023a96d5c72f55a87c1",
+  "sha256": "8f6c193e9defbaa39a82bbcaec49a41cabeb916e9dbca4e4e749d38dfcb6dda7",
+
+  "bpm": 143,
+  "notes": 702,
+  "total": 380,
+  "length": 137.59,
+  "judge": "normal"
+}

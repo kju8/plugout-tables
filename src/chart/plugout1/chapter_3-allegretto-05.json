@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout1" },
+
+  "songId": "5-chapter_3-allegretto",
+  "player": "single",
+  "level": 5,
+  "genre": "NU JAZZ",
+  "title": "allegretto",
+  "artist": "chapter 3",
+
+  "md5": "075923c61ba1b769963ad653414e0495",
+  "sha256": "7f3d84e9b609afbfda1be9e52a173c24d3e74b892559727d6f9f7c2bcb21eb97",
+
+  "bpm": 115,
+  "notes": 429,
+  "total": 280,
+  "length": 127.17,
+  "judge": "normal"
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "../../../.astro/collections/charts.schema.json",
+  "package": { "series": "plugout1" },
+
+  "songId": "6-frol-beaker",
+  "player": "single",
+  "level": 6,
+  "genre": "TRANCE TECHNO",
+  "title": "BEAKER",
+  "artist": "FROL",
+
+  "md5": "e1cf7665a7ed99d61290ef1fe3872b63",
+  "sha256": "48413ec4c74636aab1892df95b1a69ae805af920c6cebd4654cc17feaaaed127",
+
+  "bpm": 135,
+  "notes": 809,
+  "total": 231,
+  "length": 146.22,
+  "judge": "normal"
+}
